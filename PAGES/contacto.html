@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricordi Homepage</title>
+    <link rel="shotcut icon" href="./IMG/Captura de pantalla 2022-05-01 102333.png" type="image/x-icon"><!-- logo en pestana -->
+    <link rel="stylesheet" href="../CSS/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    </head>
+
+
+<!-- formulario -->
+<body>
+    <header>
+        <div>
+            <a class="logo" href="../index.html"> <img src="../IMG/logo.png" alt="logo" width="10%"></a>
+        </div>
+        
+        <!-- LINKS DE NAVEGACION -->
+        <nav class="nav">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./ingredientes.html">Ingredientes</a>
+                   
+                    <ul id="submenu">
+                        <li><a href="">Enlace 1</a></li>
+                        <li><a href="">Enlace 2</a></li>
+                        <li><a href="">Enlace 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="./promociones.html">Promociones</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <hr>
+
+    <!-- contenido de pagina contacto -->
+    <main>
+    <div class="titulo">
+        <h1>Contacto</h1>
+    </div>
+<br>
+
+
+    <!-- formulario -->
+    <div>
+        <form >  <!-- action="enviar.png" method="get" enctype="txt/plain" -->
+            <section>
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Ingrese su nombre">
+            </div>
+            <br>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Escriba su correo electronico" required>
+            </div>
+            <br>
+            <label for="genero"> Genero</label>
+            <input class= 'radio' type='radio' name='genero'> Hombre
+            <input class= 'radio' type='radio' name='genero'> Mujer
+            <input class= 'radio' type='radio' name='genero'> Otro
+            <br><br>
+
+            <div>
+                <textarea name="comentarios" id="comentarios" cols="30" rows="5" placeholder="Dejenos sus comentarios"></textarea>
+            </div>
+            <br>
+            <div>
+                <label class= 'radio' for="acepto"> Acepto terminos y condiciones</label>
+                <input class= 'radio' type="checkbox" id="acepto">
+
+                <label for="news"> Deseo recibir promociones</label>
+                <input type="checkbox" id="news">
+            </div>
+            <br>
+
+            <input type="submit" value="Enviar ahora">
+            <input type="reset" value="Borrar todo">
+        </section>
+        </form>
+    </div>
+    <!-- fin del formulario -->
+</main>
+
+
+    <!-- footer con links de redes -->
+    <footer>
+        <div>
+            <p>Prueba pagina web "Ricordi pizza" 2022</p>
+            <h6>Guillermo Barahona</h6>
+        </div>
+
+        <ul class="nav">
+            <li><a href="https://www.facebook.com/">Facebook</a></li>
+            <li><a href="https://www.instagram.com/">Instagram</a></li>
+            <li><a href="https://twitter.com">Twitter</a></li>
+        </ul>
+
+    </footer>
+
+    </body>
+    </html>

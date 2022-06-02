@@ -1,0 +1,504 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    gap: 5px;
+    grid-template-areas: 
+        "header header header"
+        "body body body"
+        "footer footer footer";
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    background-color: #8c0004;
+    padding: 20px;
+    justify-content: space-between;
+    position: sticky;
+    top: 1px;
+    z-index: 999;
+    border-bottom: 3px solid black;
+    grid-area: header;
+}
+
+.logo {
+    top: 0px;
+    left: 0px;   
+}
+
+
+.logo img{
+    border: 3px solid #000000;
+    width: 100px;
+}
+
+
+/* menu desplegable y nav */
+.nav ul {
+	background: transparent;
+	list-style: none;
+	width: 100%;
+}
+
+.nav li {
+	display: inline-block;
+	position: relative;
+	width:auto;
+}
+
+.nav a {
+	background: #242526;
+	color: white;
+	display: block;
+    font-family: 'Bebas Neue', cursive;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.nav li:hover a {
+	background: #e8a735;
+
+}
+
+#submenu {
+	left: 0;
+	position: absolute;
+	top: 35px;
+	visibility: hidden;
+	z-index: 1;
+}
+
+li:hover ul#submenu {
+	top: 40px;
+	visibility: visible;
+}
+
+#submenu li {
+    display: inline-block;
+	width: 100%;
+}
+
+#submenu a:hover {
+	background: #e8a735;
+}
+
+#submenu a {
+	background-color:#000000;
+}
+/*final de intento de menu desplegable */
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+main {
+    padding-bottom: 0px ;
+    margin: 0px;
+    grid-area: body;
+    display: flex;
+    flex-direction: column;
+}
+
+main h1 {
+    font-family: 'Bebas Neue', cursive;
+    background-color: lightskyblue;
+    padding: 20px 0px;
+    
+}
+
+main div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Bebas Neue', cursive;
+    background-color: #e2c499; 
+    background-image: url(https://images.unsplash.com/photo-1601662528567-526cd06f6582?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1915&q=80);
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    margin: 0px;
+}
+
+.inicio {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:center;
+    padding-bottom: 100px;
+    min-height: 100vh;
+}
+
+/* h2 {
+    position: relative;
+    padding: 20px 0px;
+    align-items:center;
+    justify-content:center;
+} */
+
+main div img  {
+    width: 100vh;
+    height: auto;
+    align-items:center;
+    justify-content:center;
+    flex-wrap:wrap;
+    display: flex;
+    padding: 20px 0px;
+}
+
+main div p {
+    background-color: #d3b786;
+    height: 100px;
+    text-align: justify;
+    align-items:center;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+/* main div h3 {
+    text-align: center;
+} */
+
+main .titulo {
+    /*     background-color: aqua; */
+        width: 100%;
+        padding: 30px 0px 30px 20px;
+        justify-self: center;
+        align-self: center;
+    }
+
+/* contacto */
+    form {
+        display: flex;
+        flex-direction: column;
+        background-color: #bebebeeb;
+        width: 40vw;
+        padding: 20px;
+        margin: 0px;
+        justify-self: center;
+        justify-content: center;
+        border: #000000 solid 2px;
+    }
+
+    main form div {
+        display: flex;
+        background-color: #f7f7f7 ;
+        text-align: center;
+        justify-items: center;
+        font-size: 15px;
+        padding: 5px;
+        justify-items: center;
+    }
+
+    form input {
+        background-color: #f7f7f7;
+        text-align: center;
+        justify-self: center;
+        margin-left: 15px;
+        
+    }
+
+/* nosotros */
+        .grid-nosotros {
+            display: grid;
+        /*     background-color: rgb(0, 255, 170); */
+        
+            grid-template-columns: 1fr 1fr 1fr; /* checar areas del grid */
+            grid-template-rows: 300px 300px;
+            height: 605px;
+            gap: 5px;
+        }
+        
+        .grid-nosotros div {
+        /*     background-color: orange; */
+            justify-items: center;
+            align-items: center;
+            padding: 20px 0px;
+        }
+        
+        .imagen1 {grid-column: 1/2;;}
+            .imagen1 img {height: 200px; opacity: 50%;}
+        .texto1 {grid-column: 2/4; }
+        .imagen2 {grid-column: 3/4;}
+            .imagen2 img {height: 200px; opacity: 50%;}
+        .texto2 {grid-column: 1/3;}
+
+        .grid-nosotros img {
+            width: 100%;
+            height: 100%;
+        }
+
+/* ingredientes */
+        .ingredientes-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 300px 300px 300px;
+            gap: 20px;
+            margin: 20px 0px;
+        }
+        
+        .ingredientes-grid div img {
+            height: 100%;
+            width: auto;
+            transition: all 1s;
+        }
+        
+        .ingredientes-grid div img:hover {
+            width: auto;
+            height: 110%;
+            background-color: lightseagreen;
+            font-size: 30px;
+            opacity: 30%;
+        }
+        .ingredientes-grid div{
+        /*     background-color:aqua; */
+            justify-self: center;
+            padding: 20px 0px;
+        }
+
+/* promociones */
+        .promociones-grid {
+                /* background-color: green; */
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: 200px 200px;
+                gap: 20px;
+                padding: 50px;
+                margin: 0px;
+            }
+            
+            .promociones-grid div{
+            /*     background-color:aqua; */
+                height: 200px;
+                width: 300px;
+                border: 2px solid black ;
+                padding: 0px;
+                margin: 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .promociones-grid div img {
+                height: 100%;
+                width: 100%;
+                margin: 0px;
+            }
+            
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #525252;
+    width: 100%;
+    margin: 0px;
+    padding: 20px;
+    grid-area: footer;
+}
+
+footer div p {
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+}
+
+footer div h6 {
+    color: white;
+}
+
+
+
+
+/* RESPONSIVE */
+
+    /* resolucion movil 0 - 576px */
+    @media (max-width: 576px) { /* 'max - hasta aqui' */
+        header {
+            background-color: blue;
+            color: white;
+        }
+        
+        .logo img{
+            border: 3px solid #000000;
+            width: 50px;
+        }
+
+        main div img  {
+            width: 80vh;
+            height: auto;
+            align-items:center;
+            justify-content:center;
+            flex-wrap:wrap;
+            display: flex;
+            padding: 10px 0px;
+        }
+
+        .nav a {
+            background: #242526;
+            color: white;
+            display: block;
+            font-family: 'Bebas Neue', cursive;
+            padding: 5px 5px;
+            text-align: center;
+            text-decoration: none;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            font-size: 12px;
+        }      
+        
+        /* ingredientes */
+        main .ingredientes-grid {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            /* display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 600px 100px 600px 100px 600px 100px;
+            gap: 10px; */
+        }
+        
+        main .ingredientes-grid div img {
+            display: flex;
+            height: 200px;
+            width: auto;
+        }
+        
+        main .ingredientes-grid div {
+            display: flex;
+            justify-self: center;
+            height: 200px;
+            padding: 0px 0px;
+            margin: 0px;
+        }
+        
+        footer div p {
+            font-family: 'Bebas Neue', cursive;
+            color: white;
+            font-size: 12px;
+        }
+        
+        footer div h6 {
+            color: white;
+        }
+    }
+
+/* resolucion tablet 992px */
+    @media (min-width: 576px) and (max-width: 992px) { /* min - 'a partir de' */
+
+        header {
+            background-color:tomato;
+            font-size: 30px;
+        }
+        .logo img{
+            border: 3px solid #000000;
+            width: 80px;
+        }
+
+        main div img  {
+            width: 80vh;
+            height: auto;
+            align-items:center;
+            justify-content:center;
+            flex-wrap:wrap;
+            display: flex;
+        }
+        .nav a {
+            background: #242526;
+            color: white;
+            display: block;
+            font-family: 'Bebas Neue', cursive;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            font-size: 15px;
+
+        }
+        /* ingredientes */
+        main .ingredientes-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 200px 200px 200px;
+            gap: 10px;
+            margin: 10px 0px;
+        }
+        
+        main .ingredientes-grid div img {
+            height: 150px;
+            width: auto;
+        }
+        
+        main .ingredientes-grid div{
+            background-color:aqua;
+            justify-self: center;
+            padding: 20px 0px;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        
+        footer div p {
+            font-family: 'Bebas Neue', cursive;
+            color: white;
+        }
+        
+        footer div h6 {
+            color: white;
+        }
+    }
+
+/* -- DESKTOP -- */
+@media (min-width: 992px) {
+    }
+
+/* FINAL DE RESPONSIVE */
+
+
+
+
+
+
+/* Animacion */
+@keyframes mi-efecto {
+    0% {
+        background: white;
+        color: #8c0004;
+        
+    }
+    50% {
+        background:#8c0004;
+        color: black;
+        
+    }
+    100% {
+        background: black;
+        color: white;
+        
+    }
+}
+    .titulo {
+        animation-name: mi-efecto;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-iteration-count: 3; 
+    }
