@@ -4,41 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros</title>
+    <title>Ricordi Homepage</title>
     <link rel="shotcut icon" href="./IMG/Captura de pantalla 2022-05-01 102333.png" type="image/x-icon"><!-- logo en pestana -->
-    <link rel="stylesheet" href="../CSS/index.css">
+    <!-- Link Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- sass -->
+    <link rel="stylesheet" href="./SaSS/style.sass">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     </head>
 
-<body>
-    <header>
-        <div>
-            <a class="logo" href="../index.html"> <img src="../IMG/logo.png" alt="logo" width="10%"></a>
-        </div>
-        
-        <!-- LINKS DE NAVEGACION -->
-        <nav class="nav">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./ingredientes.html">Ingredientes</a>
-                
-                    <ul id="submenu">
-                        <li><a href="">Enlace 1</a></li>
-                        <li><a href="">Enlace 2</a></li>
-                        <li><a href="">Enlace 3</a></li>
+    <body class="bg-light">
+        <header>
+            <!-- LINKS DE NAVEGACION -->
+            <nav class="navbar navbar-expand-lg bg-dark">
+                <div class="container">
+                    <a class="navbar-brand border border-light m-1 p-1" href="#" >
+                    <img src="../IMG/logo.png" width="80" height="80" class="d-inline-block align-top" alt="" >
+                    </a>
+                </div>
+    
+                <div class="container-fluid">
+    
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active border border-dark px-3 bg-light mx-1" aria-current="page" href="../index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link border border-dark px-3 bg-light mx-1" href="./nosotros.html">Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link border border-dark px-3 bg-light mx-1" href="./promociones.html">Promociones</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle border border-dark px-3 bg-light mx-1" href="./ingredientes.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Ingredientes
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link border border-dark px-3 bg-light mx-1" href="./contacto.html">Contacto</a>
+                      </li>
                     </ul>
-                </li>
-                <li><a href="./promociones.html">Promociones</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                
-            </ul>
-        </nav>
-    </header>
-    <hr>
+    
+                  </div>
+                </div>
+              </nav>
+        </header>
+        <hr>
 
     <!-- contenido pagina nosotros -->
 
