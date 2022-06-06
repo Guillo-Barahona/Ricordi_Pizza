@@ -11,88 +11,124 @@
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <!-- sass -->
-    <link rel="stylesheet" href="./SaSS/style.sass">
+    <link rel="stylesheet" href="../SASS/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     </head>
 
-    <body class="bg-light">
-        <header>
-            <!-- LINKS DE NAVEGACION -->
-            <nav class="navbar navbar-expand-lg bg-dark">
-                <div class="container">
-                    <a class="navbar-brand border border-light m-1 p-1" href="#" >
-                    <img src="../IMG/logo.png" width="80" height="80" class="d-inline-block align-top" alt="" >
-                    </a>
+    <body>
+      <header>
+          <!-- LINKS DE NAVEGACION -->
+          <nav class="navbar navbar-expand-lg bg-dark border-bottom border-2">
+              <div class="container">
+                  <a class="navbar-brand border border-light m-1 p-1" href="#" >
+                  <img src="../IMG/logo.png" width="80" height="80" class="d-inline-block align-top" alt="" >
+                  </a>
+              </div>
+  
+              <div class="container-fluid">
+  
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active border border-dark px-3 bg-light mx-1" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link border border-dark px-3 bg-light mx-1" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link border border-dark px-3 bg-light mx-1" href="./promociones.html">Promociones</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link border border-dark px-3 bg-light mx-1" href="./ingredientes.html">Ingredientes</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link border border-dark px-3 bg-light mx-1" href="./ingredientes.html">Contacto</a>
+                    </li>
+                  </ul>
+  
                 </div>
-    
-                <div class="container-fluid">
-    
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active border border-dark px-3 bg-light mx-1" aria-current="page" href="../index.html">Inicio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link border border-dark px-3 bg-light mx-1" href="./nosotros.html">Nosotros</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link border border-dark px-3 bg-light mx-1" href="./promociones.html">Promociones</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle border border-dark px-3 bg-light mx-1" href="./ingredientes.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Ingredientes
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link border border-dark px-3 bg-light mx-1" href="./contacto.html">Contacto</a>
-                      </li>
-                    </ul>
-    
-                  </div>
-                </div>
-              </nav>
-        </header>
-        <hr>
+              </div>
+            </nav>
+      </header>
+      <hr>
 
     <!-- contenido pagina nosotros -->
 
-    <main>
-        <div class="titulo">
-            <h1>Nosotros</h1>
+    <main class="container pb-xl-100 mb-4 ">
+      <div class="container-fluid bg-dark text-light fw-bold fs-1 pb-2 px-3">
+          <h1 class="titulo">Nosotros</h1>
+      </div><br>
+
+      <div class="container h-100 row">
+        <div class="container bg-light p-0 m-2 col-4">
+            <img class= "d-block w-100 opacity-50" src="../IMG/bakery-gc794ec01f_1920.jpg">
         </div>
 
-        <div class="grid-nosotros">
-            <div class="imagen1"><img src="../IMG/bakery-gc794ec01f_1920.jpg"></div>
-            <div class="texto1"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nam eaque illum adipisci totam perspiciatis reiciendis veniam! Ipsa sed enim vitae, perspiciatis veniam nemo cumque sint ab voluptate facilis eveniet.</span></div>
-            
-            <div class="texto2"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum odit cupiditate quas laudantium ipsam, ut perferendis optio vel, ducimus necessitatibus ipsum dignissimos deleniti nulla! Nemo soluta sed hic dignissimos, enim aspernatur. Doloremque optio voluptates natus blanditiis quo incidunt ex nostrum.</span></div>
-            <div class="imagen2"><img src="../IMG/pizza-oven-g1bc9c9f0f_1280.jpg"></div>
+        <div class="container bg-light p-2 m-2 col-7">
+          <p class="d-block w-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nam eaque illum adipisci totam perspiciatis reiciendis veniam! Ipsa sed enim vitae, perspiciatis veniam nemo cumque sint ab voluptate facilis eveniet.</p>
         </div>
+      </div>
+
+
+      <div class="container h-100 mb-4 pb-3 row">
+        <div class="container bg-light p-2 m-2 col-7">
+          <p class="d-block w-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nam eaque illum adipisci totam perspiciatis reiciendis veniam! Ipsa sed enim vitae, perspiciatis veniam nemo cumque sint ab voluptate facilis eveniet.</p>
+        </div>
+      
+        <div class="container bg-light p-0 m-2 col-4">
+            <img class= "d-block w-100 opacity-50" src="../IMG/pizza-oven-g1bc9c9f0f_1280.jpg">
+        </div>
+      </div>
     </main>
     
-    <!-- footer con links de redes -->
-    <footer>
-        <div>
-            <p>Prueba pagina web "Ricordi pizza" 2022</p>
-            <h6>Guillermo Barahona</h6>
-        </div>
+<!-- footer con links de redes -->
+<footer class="text-center text-white" style="background-color: #f1f1f1;">
 
-        <ul class="nav">
-            <li><a href="https://www.facebook.com/">Facebook</a></li>
-            <li><a href="https://www.instagram.com/">Instagram</a></li>
-            <li><a href="https://twitter.com">Twitter</a></li>
-        </ul>
+  <div class="container pt-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a
+          class="btn btn-floating btn-lg text-dark m-1 border border-dark px-3 bg-light"
+          href="https://www.facebook.com/"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-facebook-f"> Facebook </i
+        ></a>
+  
+        <!-- Twitter -->
+        <a
+          class="btn btn-floating btn-lg text-dark m-1 border border-dark px-3 bg-light"
+          href="https://twitter.com"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-twitter"> Twitter </i
+        ></a>
+  
+        <!-- Instagram -->
+        <a
+          class="btn btn-floating btn-lg text-dark m-1 border border-dark px-3 bg-light"
+          href="https://www.instagram.com/"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-instagram"> Instagram </i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center text-light p-3 bg-dark" >
+      Prueba pagina web "Ricordi pizza" 2022:
+      <h6><a class="text-light h6" href="https://mdbootstrap.com/">Guillermo Barahona</a></h6>
+    </div>
 
-    </footer>
 
-    </body>
-    </html>
+</footer>
+
+</body>
+</html>

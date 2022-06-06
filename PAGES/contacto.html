@@ -11,117 +11,144 @@
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <!-- sass -->
-    <link rel="stylesheet" href="./SaSS/style.sass">
+    <link rel="stylesheet" href="../SASS/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     </head>
 
-
-<!-- formulario -->
-<body class="bg-light">
-    <header>
-        <!-- LINKS DE NAVEGACION -->
-        <nav class="navbar navbar-expand-lg bg-dark">
-            <div class="container">
-                <a class="navbar-brand border border-light m-1 p-1" href="#" >
-                <img src="../IMG/logo.png" width="80" height="80" class="d-inline-block align-top" alt="" >
-                </a>
-            </div>
-
-            <div class="container-fluid">
-
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active border border-dark px-3 bg-light mx-1" aria-current="page" href="../index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link border border-dark px-3 bg-light mx-1" href="./nosotros.html">Nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link border border-dark px-3 bg-light mx-1" href="./promociones.html">Promociones</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle border border-dark px-3 bg-light mx-1" href="./ingredientes.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Ingredientes
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link border border-dark px-3 bg-light mx-1" href="./contacto.html">Contacto</a>
-                  </li>
-                </ul>
-
+    <body>
+      <header>
+          <!-- LINKS DE NAVEGACION -->
+          <nav class="navbar navbar-expand-lg bg-dark border-bottom border-2">
+              <div class="container">
+                  <a class="navbar-brand border border-light m-1 p-1" href="#" >
+                  <img src="../IMG/logo.png" width="80" height="80" class="d-inline-block align-top" alt="" >
+                  </a>
               </div>
-            </div>
-          </nav>
-    </header>
-    <hr>
+  
+              <div class="container-fluid">
+  
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active border border-dark px-3 bg-light mx-1" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link border border-dark px-3 bg-light mx-1" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link border border-dark px-3 bg-light mx-1" href="./promociones.html">Promociones</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link border border-dark px-3 bg-light mx-1" href="./ingredientes.html">Ingredientes</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link border border-dark px-3 bg-light mx-1" href="./contacto.html">Contacto</a>
+                    </li>
+                  </ul>
+  
+                </div>
+              </div>
+            </nav>
+      </header>
+      <hr>
 
+          <!-- contenido pagina principal -->
+    <main class="container pb-xl-100 mb-4 ">
+      <div class="container-fluid bg-dark text-light fw-bold fs-1 pb-2 px-3">
+            <h1 class="titulo">Contacto</h1>
+        </div><br>
 
     <!-- formulario -->
-    <div>
-        <form >  <!-- action="enviar.png" method="get" enctype="txt/plain" -->
-            <section>
-            <div>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" placeholder="Ingrese su nombre">
-            </div>
-            <br>
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email" placeholder="Escriba su correo electronico" required>
-            </div>
-            <br>
-            <label for="genero"> Genero</label>
-            <input class= 'radio' type='radio' name='genero'> Hombre
-            <input class= 'radio' type='radio' name='genero'> Mujer
-            <input class= 'radio' type='radio' name='genero'> Otro
-            <br><br>
+    <div class="container bg-light py-3 w-50">
+    <form>
+      <div class="mb-3">
+        <label for="exampleInputNombre" class="form-label">Nombre</label>
+        <input type="email" class="form-control" id="exampleInputNombre" aria-describedby="NombreHelp">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputTema" class="form-label">Tema</label>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Selecciona un tema</option>
+          <option value="1">Felicitaciones</option>
+          <option value="2">Comentarios y sugerencias</option>
+          <option value="3">Problemas con servico</option>
+          <option value="4">Problemas con producto</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Dejenos sus comentarios</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div><br>
 
-            <div>
-                <textarea name="comentarios" id="comentarios" cols="30" rows="5" placeholder="Dejenos sus comentarios"></textarea>
-            </div>
-            <br>
-            <div>
-                <label class= 'radio' for="acepto"> Acepto terminos y condiciones</label>
-                <input class= 'radio' type="checkbox" id="acepto">
 
-                <label for="news"> Deseo recibir promociones</label>
-                <input type="checkbox" id="news">
-            </div>
-            <br>
+  <div class="conatiner d-flex justify-content-center">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1862.0258849963666!2d-89.59393779080403!3d21.03061445903826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5676e460222fd7%3A0x9c4166997806372d!2sC.%2023%20238%2C%20Montebello%2C%2097113%20M%C3%A9rida%2C%20Yuc.!5e0!3m2!1ses-419!2smx!4v1654477983810!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
 
-            <input type="submit" value="Enviar ahora">
-            <input type="reset" value="Borrar todo">
-        </section>
-        </form>
-    </div>
-    <!-- fin del formulario -->
+
 </main>
 
 
-    <!-- footer con links de redes -->
-    <footer>
-        <div>
-            <p>Prueba pagina web "Ricordi pizza" 2022</p>
-            <h6>Guillermo Barahona</h6>
-        </div>
+<!-- footer con links de redes -->
+<footer class="text-center text-white" style="background-color: #f1f1f1;">
 
-        <ul class="nav">
-            <li><a href="https://www.facebook.com/">Facebook</a></li>
-            <li><a href="https://www.instagram.com/">Instagram</a></li>
-            <li><a href="https://twitter.com">Twitter</a></li>
-        </ul>
+  <div class="container pt-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a
+          class="btn btn-floating btn-lg text-dark m-1 border border-dark px-3 bg-light"
+          href="https://www.facebook.com/"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-facebook-f"> Facebook </i
+        ></a>
+  
+        <!-- Twitter -->
+        <a
+          class="btn btn-floating btn-lg text-dark m-1 border border-dark px-3 bg-light"
+          href="https://twitter.com"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-twitter"> Twitter </i
+        ></a>
+  
+        <!-- Instagram -->
+        <a
+          class="btn btn-floating btn-lg text-dark m-1 border border-dark px-3 bg-light"
+          href="https://www.instagram.com/"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-instagram"> Instagram </i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center text-light p-3 bg-dark" >
+      Prueba pagina web "Ricordi pizza" 2022:
+      <h6><a class="text-light h6" href="https://mdbootstrap.com/">Guillermo Barahona</a></h6>
+    </div>
 
-    </footer>
 
-    </body>
-    </html>
+</footer>
+
+</body>
+</html>

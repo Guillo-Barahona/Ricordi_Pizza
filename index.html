@@ -11,17 +11,17 @@
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <!-- sass -->
-    <link rel="stylesheet" href="./SaSS/style.css">
+    <link rel="stylesheet" href="./SASS/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     </head>
 
-    <body class="bg-img">
+    <body>
       <header>
           <!-- LINKS DE NAVEGACION -->
-          <nav class="navbar navbar-expand-lg bg-dark">
+          <nav class="navbar navbar-expand-lg bg-dark border-bottom border-2">
               <div class="container">
                   <a class="navbar-brand border border-light m-1 p-1" href="#" >
                   <img src="../IMG/logo.png" width="80" height="80" class="d-inline-block align-top" alt="" >
@@ -41,16 +41,8 @@
                     <li class="nav-item">
                       <a class="nav-link border border-dark px-3 bg-light mx-1" href="./PAGES/promociones.html">Promociones</a>
                     </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle border border-dark px-3 bg-light mx-1" href="./PAGES/ingredientes.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Ingredientes
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
+                    <li class="nav-item">
+                      <a class="nav-link border border-dark px-3 bg-light mx-1" href="./PAGES/ingredientes.html">Ingredientes</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link border border-dark px-3 bg-light mx-1" href="./PAGES/contacto.html">Contacto</a>
@@ -66,13 +58,19 @@
 
     <!-- contenido pagina principal -->
     <main>
-        <div class="container-fluid bg-warning">
-            <h1 class="titulo">Deliciosas pizzas con nuestra tradicional receta secreta</h1>
+        <div class="container-fluid text-center text-success fw-bold fs-1 pb-5">
+            <h1>Deliciosas pizzas con nuestra tradicional receta secreta!!</h1>
             <h2>Prueba para subir a github</h2>
         </div><br>
 
+        <div class="container p-3 text-center text-light pt-5">
+          <h4><strong class="fs-2">Bienvenido!!</strong><br>RICORDI pizza nace en 2020, de la idea de renacer una
+              receta secreta familiar de varios años de tradición,
+              y traerla de vuelta a un nuevo publico que busca probar el
+              sabor original de una pizza verdaderamente casera.</h4>
+          </div><br><hr>
 
-        <div class="container bg-dark w-50 p-3">
+        <div class="container bg-light w-50 p-3">
             
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
                 <div class="carousel-indicators">
@@ -103,19 +101,14 @@
             
         </div><br>
 
-        <div class="container bg-primary p-3 ">
-        <h4><strong>Bienvenido!!</strong><br>RICORDI pizza nace en 2020, de la idea de renacer una
-            receta secreta familiar de varios años de tradición,
-            y traerla de vuelta a un nuevo publico que busca probar el
-            sabor original de una pizza verdaderamente casera.</h4>
-        </div>
+
     </main>
     <hr>
 
 
 
 <!-- footer con links de redes -->
-    <footer class="text-center text-white" style="background-color: #f1f1f1;">
+    <footer class="text-center text-white py-0" style="background-color: #f1f1f1;">
 
         <div class="container pt-4">
             <!-- Section: Social media -->
