@@ -20,40 +20,40 @@
 
     <body>
       <header>
-          <!-- LINKS DE NAVEGACION -->
-          <nav class="navbar navbar-expand-lg bg-dark border-bottom border-2">
-              <div class="container">
-                  <a class="navbar-brand border border-light m-1 p-1" href="#" >
-                  <img src="../IMG/logo.png" width="80" height="80" class="d-inline-block align-top" alt="" >
-                  </a>
+        <!-- LINKS DE NAVEGACION -->
+        <nav class="navbar navbar-expand-lg bg-dark border-bottom border-2 flex-row">
+            <div class="container d-flex justify-content-between bg-danger">
+                <a class="navbar-brand border border-light m-1 p-1" href="#" >
+                <img src="../IMG/logo.png" width="80" height="80" class="d-inline-block align-top" alt="" >
+                </a>
+            </div>
+
+            <div class="container d-flex justify-content-end bg-warning">
+
+              <div class="navbar navbar-expand-lg bg-success d-flex justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active border border-dark px-3 bg-light mx-1" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link border border-dark px-3 bg-light mx-1" href="./nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link border border-dark px-3 bg-light mx-1" href="./promociones.html">Promociones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link border border-dark px-3 bg-light mx-1" href="./ingredientes.html">Ingredientes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link border border-dark px-3 bg-light mx-1" href="./contacto.html">Contacto</a>
+                  </li>
+                </ul>
+
               </div>
-  
-              <div class="container-fluid">
-  
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link active border border-dark px-3 bg-light mx-1" aria-current="page" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link border border-dark px-3 bg-light mx-1" href="./nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link border border-dark px-3 bg-light mx-1" href="./promociones.html">Promociones</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link border border-dark px-3 bg-light mx-1" href="./ingredientes.html">Ingredientes</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link border border-dark px-3 bg-light mx-1" href="./ingredientes.html">Contacto</a>
-                    </li>
-                  </ul>
-  
-                </div>
-              </div>
-            </nav>
-      </header>
-      <hr>
+            </div>
+          </nav>
+    </header>
+    <hr>
 
     <!-- contenido pagina principal -->
     <main class="container pb-xl-100 mb-4 ">
@@ -101,11 +101,11 @@
 
 
 <!-- footer con links de redes -->
-<footer class="text-center text-white" style="background-color: #f1f1f1;">
+<footer class="text-center text-white py-0" style="background-color: #f1f1f1;">
 
   <div class="container pt-4">
       <!-- Section: Social media -->
-      <section class="mb-4">
+      <section class="mb-4 d-flex justify-content-end">
         <!-- Facebook -->
         <a
           class="btn btn-floating btn-lg text-dark m-1 border border-dark px-3 bg-light"
@@ -138,12 +138,10 @@
     <!-- Grid container -->
   
     <!-- Copyright -->
-    <div class="text-center text-light p-3 bg-dark" >
-      Prueba pagina web "Ricordi pizza" 2022:
-      <h6><a class="text-light h6" href="https://mdbootstrap.com/">Guillermo Barahona</a></h6>
+    <div class="text-center text-light p-3 bg-dark d-flex flex-column justify-content-end" >
+      <div class="py-0 my-0">Prueba pagina web "Ricordi pizza" 2022:</div><br>
+      <div class="py-0 my-0"><h6><a class="text-light h6" href="#">Guillermo Barahona</a></h6></div>
     </div>
-
-
 </footer>
 
 </body>
