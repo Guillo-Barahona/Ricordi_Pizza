@@ -1,5 +1,94 @@
-body {
-    background-image: url(https://images.pexels.com/photos/905847/pexels-photo-905847.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-    background-size: 100vw;
-    
+header {
+    nav{
+        background-color: #303030;
+        border-bottom: 2px solid white;
+    }
 }
+
+body {
+    /* background-image: url(https://images.pexels.com/photos/905847/pexels-photo-905847.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); */
+    background-size: 100vw;
+    background-color: #f6edce;
+}
+
+main {
+    background-color: #303030;
+    opacity: .9;
+    color: white;
+
+    div {
+        opacity: 1;
+    }
+}
+
+
+
+/* responsive con variables */
+$mobile: 576px;
+$tablet: 768px;
+$desktop: 978px;
+
+
+    @media (max-width: $mobile) {
+        .formulario {
+            padding: 0px;
+            margin: 0px;
+            background-color: white;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+            form {
+            background-color: red;
+            width: 90%;
+            padding: 5%;
+            margin: 80%;
+            color: blue;
+            margin: 0px;
+        }
+    }
+
+
+
+    @media (min-width: $mobile) and (max-width: $desktop) {
+        .formulario {
+            padding: 1%;
+            margin: 0px;
+            background-color: white;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        form { 
+            background-color: yellow;
+            width: 80%;
+            padding: 5%;
+            margin: 90%;
+            color: blue;
+            margin: 0px;
+        }
+    }
+
+
+
+    @media (min-width: $desktop ) {
+        .formulario {
+            padding: 1%;
+            margin: 0px;
+            background-color: white;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        form { 
+            background-color: cyan;
+            width: 70%;
+            padding: 5%;
+            margin: 90%;
+            color: blue;
+            margin: 0px;
+        }
+    }
+}
+
+
+/* container bg-light p-3 w-50 */

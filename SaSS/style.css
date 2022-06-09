@@ -1,5 +1,93 @@
-body {
-  background-image: url(../IMG/background.png);
-  background-size: 100vw;
+header nav {
+  background-color: #303030;
+  border-bottom: 2px solid white;
 }
+
+body {
+  /* background-image: url(https://images.pexels.com/photos/905847/pexels-photo-905847.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); */
+  background-size: 100vw;
+  background-color: #f6edce;
+}
+
+main {
+  background-color: #303030;
+  opacity: .9;
+  color: white;
+}
+
+main div {
+  opacity: 1;
+}
+
+/* responsive con variables */
+@media (max-width: 576px) {
+  .formulario {
+    padding: 0px;
+    margin: 0px;
+    background-color: white;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  form {
+    background-color: red;
+    width: 90%;
+    padding: 5%;
+    margin: 80%;
+    color: blue;
+    margin: 0px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 978px) {
+  .formulario {
+    padding: 1%;
+    margin: 0px;
+    background-color: white;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  form {
+    background-color: yellow;
+    width: 80%;
+    padding: 5%;
+    margin: 90%;
+    color: blue;
+    margin: 0px;
+  }
+}
+
+@media (min-width: 978px) {
+  .formulario {
+    padding: 1%;
+    margin: 0px;
+    background-color: white;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .formulario form {
+    background-color: cyan;
+    width: 70%;
+    padding: 5%;
+    margin: 90%;
+    color: blue;
+    margin: 0px;
+  }
+}
+
+/* container bg-light p-3 w-50 */
 /*# sourceMappingURL=style.css.map */
