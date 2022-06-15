@@ -91,4 +91,91 @@ $desktop: 978px;
 }
 
 
-/* container bg-light p-3 w-50 */
+/* extend */
+/* container bg-light w-25 p-1 d-flex */
+
+.ContenedorImg {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    width: 1fr;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.ContenedorImg--verde {
+    @extend .ContenedorImg;
+    background-color: green;
+    color: white;
+
+}
+
+.ContenedorImg--rojo {
+    @extend .ContenedorImg;
+    background-color: red;
+    color: white;
+
+}
+.ContenedorImg--amarillo {
+    @extend .ContenedorImg;
+    background-color: yellow;
+    color: white;
+
+}
+.ContenedorImg--azul {
+    @extend .ContenedorImg;
+    background-color: blue;
+    color: white;
+
+}
+.ContenedorImg--magenta {
+    @extend .ContenedorImg;
+    background-color: magenta;
+    color: white;
+
+}
+.ContenedorImg--cyan {
+    @extend .ContenedorImg;
+    background-color: cyan;
+    color: white;
+
+}
+
+/* mixin */
+
+@mixin ContenedorTexto {
+    display: inline-block;
+    padding: 10px;
+    width: 30%;
+    border: 1px solid black;
+    
+}
+
+.ContenedorTexto--rojo {
+    @include ContenedorTexto;
+    background-color: red;
+    color: cyan;
+    font-style: italic;
+}
+
+.ContenedorTexto--azul {
+    @include ContenedorTexto;
+    background-color: cyan;
+    color: green;
+    font-weight: 600;
+}
+
+.ContenedorTexto--verde {
+    @include ContenedorTexto;
+    background-color: lime;
+    color: red;
+    font-size: 20px;
+}
+
+
+div :hover{
+    color: orange;
+    background-color: chocolate;
+}
+

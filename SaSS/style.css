@@ -89,5 +89,85 @@ main div {
   }
 }
 
-/* container bg-light p-3 w-50 */
+/* extend */
+/* container bg-light w-25 p-1 d-flex */
+.ContenedorImg, .ContenedorImg--verde, .ContenedorImg--rojo, .ContenedorImg--amarillo, .ContenedorImg--azul, .ContenedorImg--magenta, .ContenedorImg--cyan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+  margin: 10px;
+  width: 1fr;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+.ContenedorImg--verde {
+  background-color: green;
+  color: white;
+}
+
+.ContenedorImg--rojo {
+  background-color: red;
+  color: white;
+}
+
+.ContenedorImg--amarillo {
+  background-color: yellow;
+  color: white;
+}
+
+.ContenedorImg--azul {
+  background-color: blue;
+  color: white;
+}
+
+.ContenedorImg--magenta {
+  background-color: magenta;
+  color: white;
+}
+
+.ContenedorImg--cyan {
+  background-color: cyan;
+  color: white;
+}
+
+/* mixin */
+.ContenedorTexto--rojo {
+  display: inline-block;
+  padding: 10px;
+  width: 30%;
+  border: 1px solid black;
+  background-color: red;
+  color: cyan;
+  font-style: italic;
+}
+
+.ContenedorTexto--azul {
+  display: inline-block;
+  padding: 10px;
+  width: 30%;
+  border: 1px solid black;
+  background-color: cyan;
+  color: green;
+  font-weight: 600;
+}
+
+.ContenedorTexto--verde {
+  display: inline-block;
+  padding: 10px;
+  width: 30%;
+  border: 1px solid black;
+  background-color: lime;
+  color: red;
+  font-size: 20px;
+}
+
+div :hover {
+  color: orange;
+  background-color: chocolate;
+}
 /*# sourceMappingURL=style.css.map */
