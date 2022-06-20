@@ -15,44 +15,48 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <!-- sass -->
     <link rel="stylesheet" href="../SaSS/style.css">
+    <!-- Google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
     </head>
 
     <body>
       <header>
-        <!-- LINKS DE NAVEGACION -->
-        <nav class="navbar navbar-expand-lg bg-dark border-bottom border-2 flex-row">
-            <div class="container d-flex justify-content-between bg-danger">
-                <a class="navbar-brand border border-light m-1 p-1" href="#" >
-                <img src="../IMG/logo.png" width="80" height="80" class="d-inline-block align-top" alt="" >
-                </a>
-            </div>
-
-            <div class="container d-flex justify-content-end bg-warning">
-
-              <div class="navbar navbar-expand-lg bg-success d-flex justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active border border-dark px-3 bg-light mx-1" aria-current="page" href="../index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link border border-dark px-3 bg-light mx-1" href="./nosotros.html">Nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link border border-dark px-3 bg-light mx-1" href="./promociones.html">Promociones</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link border border-dark px-3 bg-light mx-1" href="./ingredientes.html">Ingredientes</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link border border-dark px-3 bg-light mx-1" href="./contacto.html">Contacto</a>
-                  </li>
-                </ul>
-
+          <!-- LINKS DE NAVEGACION -->
+          <nav class="navbar navbar-expand-lg bg-dark border-bottom border-1 flex-row">
+              <div class="container d-flex justify-content-between">
+                  <a class="navbar-brand border border-light m-1 p-1" href="#" >
+                  <img src="../IMG/RICORDI LOGO.png" width="80" height="80" class="d-inline-block align-top" alt="Ricordi Logo" >
+                  </a>
               </div>
-            </div>
-          </nav>
-    </header>
-    <hr>
+  
+              <div class="container d-flex justify-content-end">
+  
+                <div class="navbar navbar-expand-lg d-flex justify-content-end" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active border border-dark px-3 bg-light mx-1" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link border border-dark px-3 bg-light mx-1" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link border border-dark px-3 bg-light mx-1" href="./promociones.html">Promociones</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link border border-dark px-3 bg-light mx-1" href="./ingredientes.html">Ingredientes</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link border border-dark px-3 bg-light mx-1" href="./contacto.html">Contacto</a>
+                    </li>
+                  </ul>
+  
+                </div>
+              </div>
+            </nav>
+      </header>
+      <hr>
 
     <!-- contenido pagina principal -->
     <main class="container pb-xl-100 mb-4 ">
@@ -104,47 +108,57 @@
 
 
 <!-- footer con links de redes -->
-<footer class="text-center text-white py-0" style="background-color: #f1f1f1;">
+<footer class="text-center text-white py-0 bg-dark d-flex flex-row">
 
-  <div class="container pt-4">
-      <!-- Section: Social media -->
-      <section class="mb-4 d-flex justify-content-end">
-        <!-- Facebook -->
-        <a
-          class="btn btn-floating btn-lg text-dark m-1 border border-dark px-3 bg-light"
-          href="https://www.facebook.com/"
+  <div class="text-start text-light p-2 bg-dark" style="width: 100%" >
+    <div class="py-0 my-0">Prueba pagina web "Ricordi pizza" 2022:</div><br>
+    <div class="py-0 my-0"><h6><a class="text-light" href="#">Guillermo Barahona</a></h6></div>
+  </div>
+  
+    <div class="container pt-4">
+        <!-- Section: Social media -->
+        <section class="mb-4 d-flex justify-content-end">
+          <!-- Facebook -->
+          <a
+            class="btn btn-floating btn-lg text-dark m-1 border border-dark px-1 bg-light"
+            href="https://www.facebook.com/"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-facebook-f"><img src="../IMG/facebook.png" style= "width: 20%;"></i
+          ></a>
+    
+          <!-- Twitter -->
+          <a
+            class="btn btn-floating btn-lg text-dark m-1 border border-dark px-1 bg-light"
+            href="https://twitter.com"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-twitter"><img src="../IMG/twitter.png" style= "width: 20%;"> </i
+          ></a>
+    
+          <!-- Instagram -->
+          <a
+            class="btn btn-floating btn-lg text-dark m-1 border border-dark px-1 bg-light"
+            href="https://www.instagram.com/"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-instagram"><img src="../IMG/instagram.png" style= "width: 20%;"></i
+          ></a>
+
+          <!-- Whatsapp -->
+          <a
+          class="btn btn-floating btn-lg text-dark m-1 border border-dark px-1 bg-light"
+          href="https://web.whatsapp.com/"
           role="button"
           data-mdb-ripple-color="dark"
-          ><i class="fab fa-facebook-f"> Facebook </i
-        ></a>
-  
-        <!-- Twitter -->
-        <a
-          class="btn btn-floating btn-lg text-dark m-1 border border-dark px-3 bg-light"
-          href="https://twitter.com"
-          role="button"
-          data-mdb-ripple-color="dark"
-          ><i class="fab fa-twitter"> Twitter </i
-        ></a>
-  
-        <!-- Instagram -->
-        <a
-          class="btn btn-floating btn-lg text-dark m-1 border border-dark px-3 bg-light"
-          href="https://www.instagram.com/"
-          role="button"
-          data-mdb-ripple-color="dark"
-          ><i class="fab fa-instagram"> Instagram </i
-        ></a>
-      </section>
-      <!-- Section: Social media -->
-    </div>
-    <!-- Grid container -->
-  
-    <!-- Copyright -->
-    <div class="text-center text-light p-3 bg-dark d-flex flex-column justify-content-end" >
-      <div class="py-0 my-0">Prueba pagina web "Ricordi pizza" 2022:</div><br>
-      <div class="py-0 my-0"><h6><a class="text-light h6" href="#">Guillermo Barahona</a></h6></div>
-    </div>
+          ><i class="fab fa-whatsapp"><img src="../IMG/whatsapp.png" style= "width: 20%;"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
 </footer>
 
 </body>

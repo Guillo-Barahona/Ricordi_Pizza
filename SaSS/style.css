@@ -19,12 +19,15 @@ main div {
   opacity: 1;
 }
 
+main h1 {
+  font-family: 'Fjalla One', sans-serif;
+}
+
 /* responsive con variables */
 @media (max-width: 576px) {
   .formulario {
     padding: 0px;
     margin: 0px;
-    background-color: white;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -47,7 +50,6 @@ main div {
   .formulario {
     padding: 1%;
     margin: 0px;
-    background-color: white;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -70,7 +72,6 @@ main div {
   .formulario {
     padding: 1%;
     margin: 0px;
-    background-color: white;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -89,6 +90,15 @@ main div {
   }
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: chocolate;
+}
+
 /* extend */
 /* container bg-light w-25 p-1 d-flex */
 .ContenedorImg, .ContenedorImg--verde, .ContenedorImg--rojo, .ContenedorImg--amarillo, .ContenedorImg--azul, .ContenedorImg--magenta, .ContenedorImg--cyan {
@@ -98,11 +108,11 @@ main div {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 10px;
-  margin: 10px;
+  padding: 5px;
+  margin: 0px;
   width: 1fr;
-  border: 2px solid black;
-  border-radius: 20px;
+  /*     border: 2px solid black;
+    border-radius: 20px; */
 }
 
 .ContenedorImg--verde {
@@ -136,38 +146,110 @@ main div {
 }
 
 /* mixin */
-.ContenedorTexto--rojo {
-  display: inline-block;
-  padding: 10px;
-  width: 30%;
-  border: 1px solid black;
-  background-color: red;
-  color: cyan;
-  font-style: italic;
+.ContenedorTexto--negro {
+  font-family: 'Fjalla One', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 20px;
+  margin: 5px;
+  width: 50%;
+  height: 100%;
+  border: 2px solid white;
+  border-radius: 20px;
+  background-color: #303030;
+  color: white;
 }
 
 .ContenedorTexto--azul {
-  display: inline-block;
-  padding: 10px;
-  width: 30%;
-  border: 1px solid black;
+  font-family: 'Fjalla One', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 20px;
+  margin: 5px;
+  width: 50%;
+  height: 100%;
+  border: 2px solid white;
+  border-radius: 20px;
   background-color: cyan;
   color: green;
   font-weight: 600;
 }
 
 .ContenedorTexto--verde {
-  display: inline-block;
-  padding: 10px;
-  width: 30%;
-  border: 1px solid black;
+  font-family: 'Fjalla One', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 20px;
+  margin: 5px;
+  width: 50%;
+  height: 100%;
+  border: 2px solid white;
+  border-radius: 20px;
   background-color: lime;
   color: red;
   font-size: 20px;
 }
 
-div :hover {
-  color: orange;
-  background-color: chocolate;
+.ContenedorTexto--negro:hover {
+  background-color: #424242;
+  color: chocolate;
+  cursor: pointer;
+}
+
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 0px;
+  margin: 0px;
+}
+
+.banner img {
+  opacity: .9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  height: auto;
 }
 /*# sourceMappingURL=style.css.map */

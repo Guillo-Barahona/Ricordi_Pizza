@@ -19,7 +19,12 @@ main {
     div {
         opacity: 1;
     }
+
+    h1 {
+        font-family: 'Fjalla One', sans-serif;
+    }
 }
+
 
 
 
@@ -33,7 +38,7 @@ $desktop: 978px;
         .formulario {
             padding: 0px;
             margin: 0px;
-            background-color: white;
+            
             width: 100%;
             display: flex;
             justify-content: center;
@@ -54,7 +59,7 @@ $desktop: 978px;
         .formulario {
             padding: 1%;
             margin: 0px;
-            background-color: white;
+            
             width: 100%;
             display: flex;
             justify-content: center;
@@ -75,7 +80,7 @@ $desktop: 978px;
         .formulario {
             padding: 1%;
             margin: 0px;
-            background-color: white;
+            
             width: 100%;
             display: flex;
             justify-content: center;
@@ -90,6 +95,14 @@ $desktop: 978px;
     }
 }
 
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover {
+        color: chocolate;
+    }
 
 /* extend */
 /* container bg-light w-25 p-1 d-flex */
@@ -97,11 +110,11 @@ $desktop: 978px;
 .ContenedorImg {
     display: flex;
     justify-content: center;
-    padding: 10px;
-    margin: 10px;
+    padding: 5px;
+    margin: 0px;
     width: 1fr;
-    border: 2px solid black;
-    border-radius: 20px;
+/*     border: 2px solid black;
+    border-radius: 20px; */
 }
 
 .ContenedorImg--verde {
@@ -145,19 +158,25 @@ $desktop: 978px;
 /* mixin */
 
 @mixin ContenedorTexto {
-    display: inline-block;
-    padding: 10px;
-    width: 30%;
-    border: 1px solid black;
+    font-family: 'Fjalla One', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:flex-start;
+    padding: 20px;
+    margin: 5px;
+    width: 50%;
+    height: 100%;
+    border: 2px solid white;
+    border-radius: 20px;
     
 }
 
-.ContenedorTexto--rojo {
+.ContenedorTexto--negro {
     @include ContenedorTexto;
-    background-color: red;
-    color: cyan;
-    font-style: italic;
-}
+    background-color: #303030;
+    color: white;
+    }
 
 .ContenedorTexto--azul {
     @include ContenedorTexto;
@@ -174,8 +193,24 @@ $desktop: 978px;
 }
 
 
-div :hover{
-    color: orange;
-    background-color: chocolate;
+.ContenedorTexto--negro:hover {
+    background-color: #424242;
+    color: chocolate;
+    cursor: pointer;
 }
 
+.banner {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    margin: 0px;
+}
+
+.banner img {
+    opacity: .9;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+}
