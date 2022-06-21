@@ -1,3 +1,8 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 header {
     nav{
         background-color: #303030;
@@ -15,6 +20,7 @@ main {
     background-color: #303030;
     opacity: .9;
     color: white;
+    width: 100vw;
 
     div {
         opacity: 1;
@@ -26,19 +32,16 @@ main {
 }
 
 
-
-
 /* responsive con variables */
 $mobile: 576px;
 $tablet: 768px;
 $desktop: 978px;
 
-
+/* mobile */
     @media (max-width: $mobile) {
         .formulario {
             padding: 0px;
             margin: 0px;
-            
             width: 100%;
             display: flex;
             justify-content: center;
@@ -51,10 +54,63 @@ $desktop: 978px;
             color: blue;
             margin: 0px;
         }
+
+
+        .nav-link {
+            background-color: limegreen;
+        }
+        .navbar {
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .navbar .container {
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .navbar .container div {
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+        }
+        .navbar .container div ul {
+            background-color: salmon;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .ContenedorImagen {
+            
+            padding: 5px;
+        }
+        .ContenedorImagen .ContenedorTexto--negro{
+            
+            margin: 0px;
+            width: 100%;
+        }
+        .ContenedorImagen .ContenedorTexto--negro div{
+            margin: 0px;
+            width: auto;
+            height: auto;
     }
+        .ContenedorImagen .ContenedorTexto--negro div img {
+
+            padding: 2px 20px 2px 2px;
+            margin: 0px;
+            width: 80%;
+            height: auto;
+        }
+}
 
 
-
+/* tablet */
     @media (min-width: $mobile) and (max-width: $desktop) {
         .formulario {
             padding: 1%;
@@ -72,8 +128,37 @@ $desktop: 978px;
             color: blue;
             margin: 0px;
         }
-    }
 
+        .nav-link {
+            background-color: magenta;
+        }
+        .navbar {
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .navbar .container {
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .navbar .container div {
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+        }
+        .navbar .container div ul {
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+        }
+    }
 
 
     @media (min-width: $desktop ) {
@@ -92,6 +177,21 @@ $desktop: 978px;
             color: blue;
             margin: 0px;
         }
+        .nav-link {
+            background-color: green;
+        }
+    }
+    .ContenedorImagen {
+        
+        display: flex;
+        justify-content: center;
+        
+    }
+    .ContenedorImagen .ContenedorTexto--negro {
+        
+        display: flex;
+        width: 50vw;
+        justify-content: space-around;
     }
 }
 
@@ -107,49 +207,55 @@ $desktop: 978px;
 /* extend */
 /* container bg-light w-25 p-1 d-flex */
 
-.ContenedorImg {
+.ContenedorImagen {
+    justify-content: space-around;
+    margin: 5px;
+    height: 100%;
+
+}
+
+.ContenedorImagen--negro {
+    @extend .ContenedorImagen;
+    background-color: #303030;
+    color: white;
     display: flex;
     justify-content: center;
-    padding: 5px;
-    margin: 0px;
-    width: 1fr;
-/*     border: 2px solid black;
-    border-radius: 20px; */
+    border: 2px solid white;
+    border-radius: 20px;
 }
 
-.ContenedorImg--verde {
-    @extend .ContenedorImg;
-    background-color: green;
-    color: white;
-
+.ContenedorImagen--negro img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
 }
 
-.ContenedorImg--rojo {
-    @extend .ContenedorImg;
+.ContenedorImagen--rojo {
+    @extend .ContenedorImagen;
     background-color: red;
     color: white;
 
 }
-.ContenedorImg--amarillo {
-    @extend .ContenedorImg;
+.ContenedorImagen--amarillo {
+    @extend .ContenedorImagen;
     background-color: yellow;
     color: white;
 
 }
-.ContenedorImg--azul {
-    @extend .ContenedorImg;
+.ContenedorImagen--azul {
+    @extend .ContenedorImagen;
     background-color: blue;
     color: white;
 
 }
-.ContenedorImg--magenta {
-    @extend .ContenedorImg;
+.ContenedorImagen--magenta {
+    @extend .ContenedorImagen;
     background-color: magenta;
     color: white;
 
 }
-.ContenedorImg--cyan {
-    @extend .ContenedorImg;
+.ContenedorImagen--cyan {
+    @extend .ContenedorImagen;
     background-color: cyan;
     color: white;
 
@@ -162,10 +268,8 @@ $desktop: 978px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items:flex-start;
-    padding: 20px;
+    align-items:center;
     margin: 5px;
-    width: 50%;
     height: 100%;
     border: 2px solid white;
     border-radius: 20px;
@@ -176,6 +280,9 @@ $desktop: 978px;
     @include ContenedorTexto;
     background-color: #303030;
     color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between
     }
 
 .ContenedorTexto--azul {

@@ -25,8 +25,8 @@
     <body>
       <header>
           <!-- LINKS DE NAVEGACION -->
-          <nav class="navbar navbar-expand-lg bg-dark border-bottom border-1 flex-row">
-              <div class="container d-flex justify-content-between">
+          <nav class="navbar navbar-expand-lg border-bottom border-1 d-flex">
+              <div class="container d-flex ">
                   <a class="navbar-brand border border-light m-1 p-1" href="#" >
                   <img src="./IMG/RICORDI LOGO.png" width="80" height="80" class="d-inline-block align-top" alt="Ricordi Logo" >
                   </a>
@@ -36,8 +36,8 @@
   
                 <div class="navbar navbar-expand-lg d-flex justify-content-end" id="navbarSupportedContent">
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link active border border-dark px-3 bg-light mx-1" aria-current="page" href="#">Inicio</a>
+                    <li>
+                      <a class="nav-link border border-dark px-3 bg-light mx-1" aria-current="page" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link border border-dark px-3 bg-light mx-1" href="./PAGES/nosotros.html">Nosotros</a>
@@ -61,7 +61,7 @@
 
 
       <!-- contenido pagina principal -->
-      <main class="container pb-xl-100 mb-4 ">
+      <main class="container pb-xl-100 mb-4">
 
         <div class= "banner">
           <img src="./IMG/RICORDI LOGO2.png" alt="ricodi banner">
@@ -72,40 +72,22 @@
           <button class="btn btn-success btn-lg"><a href="https://web.whatsapp.com/">Realiza tu pedido por Whatsapp</a></button>
       </div><br>
 
-        <div class= ContenedorImg>
+        <div class="ContenedorImagen">
           <div class="ContenedorTexto--negro">
-            <div><img src="./IMG/picolo.jpg" width="150" height="150" class="d-inline-block align-top" alt="" ></div>
-            <a href="./PAGES/ingredientes.html"><div><h3>Ingredientes</h3><p>Conoce nuestras pizzas de especialidad > </p></div></a>
+            <div>
+              <img src="./IMG/picolo.jpg" width="150" height="150" class="d-inline-block align-top mx-3" alt="" >
+            </div>
+
+            <div><a href="./PAGES/ingredientes.html"><h3>Ingredientes</h3><p>Conoce nuestras pizzas de especialidad > </p></a>
+            </div>
           </div>
 
           <div class="ContenedorTexto--negro">
-            <div><img src="./IMG/picolo.jpg" width="150" height="150" class="d-inline-block align-top" alt="" ></div>
+            <div>
+            <img src="./IMG/picolo.jpg" width="150" height="150" class="d-inline-block align-top mx-3" alt="" ></div>
             <a href="./PAGES/promociones.html"><div><h3>Promociones</h3><p>Conoce nuestras promociones > </p></div></a>
           </div>
         </div><br>
-
-      
-
-        <!-- desafio sass extend mixin-->
-        <div class="ContenedorImg b-2">
-          <div class="ContenedorImg"><h2>Prueba desafio Sass extend y mixin</h2></div>
-        </div>
-        <div class="ContenedorImg">
-          <div class="ContenedorImg--verde"><img src="./IMG/picolo.jpg" width="80" height="80" class="d-inline-block align-top" alt="" ></div>
-          <div class="ContenedorImg--rojo"><img src="./IMG/senzasione.png" width="80" height="80" class="d-inline-block align-top" alt="" ></div>
-          <div class="ContenedorImg--amarillo"><img src="./IMG/hawaiiana.jpg" width="80" height="80" class="d-inline-block align-top" alt="" ></div>
-          <div class="ContenedorImg--azul"><img src="./IMG/picolo.jpg" width="80" height="80" class="d-inline-block align-top" alt="" ></div>
-          <div class="ContenedorImg--magenta"><img src="./IMG/senzasione.png" width="80" height="80" class="d-inline-block align-top" alt="" ></div>
-          <div class="ContenedorImg--cyan"><img src="./IMG/hawaiiana.jpg" width="80" height="80" class="d-inline-block align-top" alt="" ></div>
-        </div>
-
-        <div class="ContenedorImg">
-          <div class="ContenedorTexto--rojo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum voluptate odio laboriosam minus doloribus? Ad.</div>
-          <div class="ContenedorTexto--azul">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga architecto quasi iure quibusdam laborum modi.</div>
-          <div class="ContenedorTexto--verde">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga architecto quasi iure quibusdam laborum modi.</div>
-
-        </div>
-        <!-- final de desafio sass extend mixin -->
 
         <div class="container bg-light w-50 p-2 rounded-4">
             
@@ -145,9 +127,9 @@
 
 
 <!-- footer con links de redes -->
-    <footer class="text-center text-white py-0 bg-dark d-flex flex-row">
+    <footer class="text-center text-white pt-0 bg-dark d-flex flex-row">
 
-      <div class="text-start text-light p-2" style="width: 100%" >
+      <div class="text-start text-light pt-4 px-3" style="width: 100%" >
         <div class="py-0 my-0">Prueba pagina web "Ricordi pizza" 2022:</div><br>
         <div class="py-0 my-0"><h6><a class="text-light" href="#">Guillermo Barahona</a></h6></div>
       </div>

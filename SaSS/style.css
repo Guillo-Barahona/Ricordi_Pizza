@@ -1,3 +1,8 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 header nav {
   background-color: #303030;
   border-bottom: 2px solid white;
@@ -13,6 +18,7 @@ main {
   background-color: #303030;
   opacity: .9;
   color: white;
+  width: 100vw;
 }
 
 main div {
@@ -24,6 +30,7 @@ main h1 {
 }
 
 /* responsive con variables */
+/* mobile */
 @media (max-width: 576px) {
   .formulario {
     padding: 0px;
@@ -44,8 +51,81 @@ main h1 {
     color: blue;
     margin: 0px;
   }
+  .nav-link {
+    background-color: limegreen;
+  }
+  .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navbar .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navbar .container div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .navbar .container div ul {
+    background-color: salmon;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .ContenedorImagen, .ContenedorImagen--negro, .ContenedorImagen--rojo, .ContenedorImagen--amarillo, .ContenedorImagen--azul, .ContenedorImagen--magenta, .ContenedorImagen--cyan {
+    padding: 5px;
+  }
+  .ContenedorImagen .ContenedorTexto--negro, .ContenedorImagen--negro .ContenedorTexto--negro, .ContenedorImagen--rojo .ContenedorTexto--negro, .ContenedorImagen--amarillo .ContenedorTexto--negro, .ContenedorImagen--azul .ContenedorTexto--negro, .ContenedorImagen--magenta .ContenedorTexto--negro, .ContenedorImagen--cyan .ContenedorTexto--negro {
+    margin: 0px;
+    width: 100%;
+  }
+  .ContenedorImagen .ContenedorTexto--negro div, .ContenedorImagen--negro .ContenedorTexto--negro div, .ContenedorImagen--rojo .ContenedorTexto--negro div, .ContenedorImagen--amarillo .ContenedorTexto--negro div, .ContenedorImagen--azul .ContenedorTexto--negro div, .ContenedorImagen--magenta .ContenedorTexto--negro div, .ContenedorImagen--cyan .ContenedorTexto--negro div {
+    margin: 0px;
+    width: auto;
+    height: auto;
+  }
+  .ContenedorImagen .ContenedorTexto--negro div img, .ContenedorImagen--negro .ContenedorTexto--negro div img, .ContenedorImagen--rojo .ContenedorTexto--negro div img, .ContenedorImagen--amarillo .ContenedorTexto--negro div img, .ContenedorImagen--azul .ContenedorTexto--negro div img, .ContenedorImagen--magenta .ContenedorTexto--negro div img, .ContenedorImagen--cyan .ContenedorTexto--negro div img {
+    padding: 2px 20px 2px 2px;
+    margin: 0px;
+    width: 80%;
+    height: auto;
+  }
 }
 
+/* tablet */
 @media (min-width: 576px) and (max-width: 978px) {
   .formulario {
     padding: 1%;
@@ -65,6 +145,59 @@ main h1 {
     margin: 90%;
     color: blue;
     margin: 0px;
+  }
+  .nav-link {
+    background-color: magenta;
+  }
+  .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navbar .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navbar .container div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .navbar .container div ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
   }
 }
 
@@ -88,6 +221,25 @@ main h1 {
     color: blue;
     margin: 0px;
   }
+  .formulario .nav-link {
+    background-color: green;
+  }
+  .ContenedorImagen, .ContenedorImagen--negro, .ContenedorImagen--rojo, .ContenedorImagen--amarillo, .ContenedorImagen--azul, .ContenedorImagen--magenta, .ContenedorImagen--cyan {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .ContenedorImagen .ContenedorTexto--negro, .ContenedorImagen--negro .ContenedorTexto--negro, .ContenedorImagen--rojo .ContenedorTexto--negro, .ContenedorImagen--amarillo .ContenedorTexto--negro, .ContenedorImagen--azul .ContenedorTexto--negro, .ContenedorImagen--magenta .ContenedorTexto--negro, .ContenedorImagen--cyan .ContenedorTexto--negro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50vw;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 a {
@@ -101,46 +253,53 @@ a:hover {
 
 /* extend */
 /* container bg-light w-25 p-1 d-flex */
-.ContenedorImg, .ContenedorImg--verde, .ContenedorImg--rojo, .ContenedorImg--amarillo, .ContenedorImg--azul, .ContenedorImg--magenta, .ContenedorImg--cyan {
+.ContenedorImagen, .ContenedorImagen--negro, .ContenedorImagen--rojo, .ContenedorImagen--amarillo, .ContenedorImagen--azul, .ContenedorImagen--magenta, .ContenedorImagen--cyan {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 5px;
+  height: 100%;
+}
+
+.ContenedorImagen--negro {
+  background-color: #303030;
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 5px;
-  margin: 0px;
-  width: 1fr;
-  /*     border: 2px solid black;
-    border-radius: 20px; */
+  border: 2px solid white;
+  border-radius: 20px;
 }
 
-.ContenedorImg--verde {
-  background-color: green;
-  color: white;
+.ContenedorImagen--negro img {
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
 }
 
-.ContenedorImg--rojo {
+.ContenedorImagen--rojo {
   background-color: red;
   color: white;
 }
 
-.ContenedorImg--amarillo {
+.ContenedorImagen--amarillo {
   background-color: yellow;
   color: white;
 }
 
-.ContenedorImg--azul {
+.ContenedorImagen--azul {
   background-color: blue;
   color: white;
 }
 
-.ContenedorImg--magenta {
+.ContenedorImagen--magenta {
   background-color: magenta;
   color: white;
 }
 
-.ContenedorImg--cyan {
+.ContenedorImagen--cyan {
   background-color: cyan;
   color: white;
 }
@@ -157,17 +316,20 @@ a:hover {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  padding: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 5px;
-  width: 50%;
   height: 100%;
   border: 2px solid white;
   border-radius: 20px;
   background-color: #303030;
   color: white;
+  padding: 20px;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .ContenedorTexto--azul {
@@ -181,12 +343,10 @@ a:hover {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  padding: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 5px;
-  width: 50%;
   height: 100%;
   border: 2px solid white;
   border-radius: 20px;
@@ -206,12 +366,10 @@ a:hover {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  padding: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 5px;
-  width: 50%;
   height: 100%;
   border: 2px solid white;
   border-radius: 20px;
