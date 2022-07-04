@@ -8,6 +8,15 @@ header nav {
   border-bottom: 2px solid white;
 }
 
+footer {
+  background-color: #303030;
+  border-top: 2px solid white;
+}
+footer img:hover {
+  background-color: #60bbc5;
+  border-radius: 12px;
+}
+
 body {
   background-image: url(https://images.pexels.com/photos/905847/pexels-photo-905847.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
   background-size: 100vw;
@@ -27,161 +36,6 @@ main h1 {
   font-family: "Fjalla One", sans-serif;
 }
 
-/* responsive con variables */
-/* mobile */
-@media (max-width: 576px) {
-  .formulario {
-    padding: 0px;
-    margin: 0px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  form {
-    background-color: red;
-    width: 90%;
-    padding: 5%;
-    margin: 80%;
-    color: blue;
-    margin: 0px;
-  }
-
-  .nav-link {
-    background-color: limegreen;
-  }
-
-  .navbar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .navbar .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .navbar .container div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .navbar .container div ul {
-    background-color: salmon;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .ContenedorImagen, .ContenedorImagen--cyan, .ContenedorImagen--magenta, .ContenedorImagen--azul, .ContenedorImagen--amarillo, .ContenedorImagen--promo, .ContenedorImagen--negro {
-    padding: 5px;
-  }
-
-  .ContenedorImagen .ContenedorTexto--negro, .ContenedorImagen--cyan .ContenedorTexto--negro, .ContenedorImagen--magenta .ContenedorTexto--negro, .ContenedorImagen--azul .ContenedorTexto--negro, .ContenedorImagen--amarillo .ContenedorTexto--negro, .ContenedorImagen--promo .ContenedorTexto--negro, .ContenedorImagen--negro .ContenedorTexto--negro {
-    margin: 0px;
-    width: 100%;
-  }
-
-  .ContenedorImagen .ContenedorTexto--negro div, .ContenedorImagen--cyan .ContenedorTexto--negro div, .ContenedorImagen--magenta .ContenedorTexto--negro div, .ContenedorImagen--azul .ContenedorTexto--negro div, .ContenedorImagen--amarillo .ContenedorTexto--negro div, .ContenedorImagen--promo .ContenedorTexto--negro div, .ContenedorImagen--negro .ContenedorTexto--negro div {
-    margin: 0px;
-    width: auto;
-    height: auto;
-  }
-
-  .ContenedorImagen .ContenedorTexto--negro div img, .ContenedorImagen--cyan .ContenedorTexto--negro div img, .ContenedorImagen--magenta .ContenedorTexto--negro div img, .ContenedorImagen--azul .ContenedorTexto--negro div img, .ContenedorImagen--amarillo .ContenedorTexto--negro div img, .ContenedorImagen--promo .ContenedorTexto--negro div img, .ContenedorImagen--negro .ContenedorTexto--negro div img {
-    padding: 2px 20px 2px 2px;
-    margin: 0px;
-    width: 80%;
-    height: auto;
-  }
-}
-/* tablet */
-@media (min-width: 576px) and (max-width: 978px) {
-  .formulario {
-    padding: 1%;
-    margin: 0px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  form {
-    background-color: yellow;
-    width: 80%;
-    padding: 5%;
-    margin: 90%;
-    color: blue;
-    margin: 0px;
-  }
-
-  .nav-link {
-    background-color: magenta;
-  }
-
-  .navbar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .navbar .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .navbar .container div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .navbar .container div ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-  }
-}
-@media (min-width: 978px) {
-  .formulario {
-    padding: 1%;
-    margin: 0px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  .formulario form {
-    background-color: cyan;
-    width: 70%;
-    padding: 5%;
-    margin: 90%;
-    color: blue;
-    margin: 0px;
-  }
-  .formulario .nav-link {
-    background-color: green;
-  }
-
-  .ContenedorImagen, .ContenedorImagen--cyan, .ContenedorImagen--magenta, .ContenedorImagen--azul, .ContenedorImagen--amarillo, .ContenedorImagen--promo, .ContenedorImagen--negro {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .ContenedorImagen .ContenedorTexto--negro, .ContenedorImagen--cyan .ContenedorTexto--negro, .ContenedorImagen--magenta .ContenedorTexto--negro, .ContenedorImagen--azul .ContenedorTexto--negro, .ContenedorImagen--amarillo .ContenedorTexto--negro, .ContenedorImagen--promo .ContenedorTexto--negro, .ContenedorImagen--negro .ContenedorTexto--negro {
-    display: flex;
-    width: 50vw;
-    justify-content: space-around;
-  }
-}
-/* final responsive */
 a {
   text-decoration: none;
   color: white;
@@ -193,7 +47,7 @@ a:hover {
 
 /* extend */
 /* container bg-light w-25 p-1 d-flex */
-.ContenedorImagen, .ContenedorImagen--cyan, .ContenedorImagen--magenta, .ContenedorImagen--azul, .ContenedorImagen--amarillo, .ContenedorImagen--promo, .ContenedorImagen--negro {
+.ContenedorImagen, .ContenedorImagen--cyan, .ContenedorImagen--magenta, .ContenedorImagen--azul, .ContenedorImagen--promo, .ContenedorImagen--negro {
   justify-content: space-around;
   margin: 5px;
   height: 100%;
@@ -232,11 +86,30 @@ a:hover {
 }
 
 /* final seccion clases promo */
-.ContenedorImagen--amarillo {
-  background-color: yellow;
+/* seccion clases ingredientes */
+.ContenedorIngredientes {
+  margin: 5px;
+  height: 100%;
+  padding: 0px;
+  background-color: #303030;
+  width: 35%;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ContenedorIngredientes div {
+  height: 50%;
+  padding: 0px;
+}
+.ContenedorIngredientes div img {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  border: white solid 2px;
 }
 
+/* final de seccion clases ingredientes */
 .ContenedorImagen--azul {
   background-color: blue;
   color: white;
@@ -256,11 +129,11 @@ a:hover {
 .ContenedorTexto--negro {
   font-family: "Fjalla One", sans-serif;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   margin: 5px;
   height: 100%;
+  flex-direction: row;
   background-color: #303030;
   color: white;
   padding: 20px;
@@ -273,12 +146,12 @@ a:hover {
 .ContenedorTexto--promo {
   font-family: "Fjalla One", sans-serif;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   margin: 5px;
   height: 100%;
   /* background-color: magenta; */
+  flex-direction: row;
   color: white;
   padding: 30px;
   display: flex;
@@ -290,29 +163,47 @@ a:hover {
   border-radius: 20px 40px;
   padding: 20px 20px 70px 20px;
   margin-bottom: 0px;
-  color: #303030;
+  color: white;
+  background-color: #9f443a;
 }
 .ContenedorTexto--promo img {
+  border: white solid 2px;
   border-radius: 20px 40px;
   height: 100%;
   margin: 0px;
 }
 
-.ContenedorTexto--verde {
+.ContenedorTexto--ingredientes {
   font-family: "Fjalla One", sans-serif;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   margin: 5px;
   height: 100%;
-  background-color: lime;
-  color: red;
-  font-size: 20px;
+  flex-direction: column;
+  color: white;
+  padding: 30px;
+  display: flex;
+}
+.ContenedorTexto--ingredientes h5 {
+  background-color: #9f443a;
+  border: 2px solid white;
+  border-radius: 20px 40px;
+  padding: 20px 20px 70px 20px;
+  margin-bottom: 0px;
+  color: white;
+}
+.ContenedorTexto--ingredientes img {
+  border-radius: 20px 40px;
+  height: 100%;
+  margin: 0px;
 }
 
 .ContenedorTexto--negro:hover {
-  background-color: #424242;
+  background-color: #454545;
+  opacity: 0.9;
+}
+.ContenedorTexto--negro:hover a {
   color: chocolate;
   cursor: pointer;
 }
@@ -328,7 +219,198 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 100%;
+  width: 70%;
   height: auto;
+  border: white solid 2px;
+  border-radius: 20px;
+}
+
+.formulario {
+  font-family: "Fjalla One", sans-serif;
+}
+
+.icono {
   filter: invert(100%);
-}/*# sourceMappingURL=style.css.map */
+}
+
+/* responsive con variables */
+/* mobile */
+@media (max-width: 576px) {
+  footer .icono {
+    height: 100%;
+  }
+
+  .formulario {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  form {
+    background-color: #9f443a;
+    width: 90%;
+    padding: 5%;
+    margin: 80%;
+    color: blue;
+    margin: 0px;
+  }
+
+  .nav-link {
+    background-color: limegreen;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .navbar .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .navbar .container div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navbar .container div ul {
+    background-color: salmon;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .ContenedorImagen, .ContenedorImagen--negro, .ContenedorImagen--promo, .ContenedorImagen--azul, .ContenedorImagen--magenta, .ContenedorImagen--cyan {
+    padding: 5px;
+  }
+
+  .ContenedorImagen .ContenedorTexto--negro, .ContenedorImagen--negro .ContenedorTexto--negro, .ContenedorImagen--promo .ContenedorTexto--negro, .ContenedorImagen--azul .ContenedorTexto--negro, .ContenedorImagen--magenta .ContenedorTexto--negro, .ContenedorImagen--cyan .ContenedorTexto--negro {
+    margin: 0px;
+    width: 100%;
+  }
+
+  .ContenedorImagen .ContenedorTexto--negro div, .ContenedorImagen--negro .ContenedorTexto--negro div, .ContenedorImagen--promo .ContenedorTexto--negro div, .ContenedorImagen--azul .ContenedorTexto--negro div, .ContenedorImagen--magenta .ContenedorTexto--negro div, .ContenedorImagen--cyan .ContenedorTexto--negro div {
+    margin: 0px;
+    width: auto;
+    height: auto;
+  }
+
+  .ContenedorImagen .ContenedorTexto--negro div img, .ContenedorImagen--negro .ContenedorTexto--negro div img, .ContenedorImagen--promo .ContenedorTexto--negro div img, .ContenedorImagen--azul .ContenedorTexto--negro div img, .ContenedorImagen--magenta .ContenedorTexto--negro div img, .ContenedorImagen--cyan .ContenedorTexto--negro div img {
+    padding: 2px 20px 2px 2px;
+    margin: 0px;
+    width: 60%;
+    height: auto;
+  }
+
+  .ContenedorImagen .ContenedorIngredientes, .ContenedorImagen--negro .ContenedorIngredientes, .ContenedorImagen--promo .ContenedorIngredientes, .ContenedorImagen--azul .ContenedorIngredientes, .ContenedorImagen--magenta .ContenedorIngredientes, .ContenedorImagen--cyan .ContenedorIngredientes {
+    margin: 0px;
+    height: 100%;
+    padding: 0px;
+    width: 100%;
+  }
+}
+/* tablet */
+@media (min-width: 576px) and (max-width: 978px) {
+  .formulario {
+    padding: 1%;
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  form {
+    background-color: #9f443a;
+    width: 80%;
+    padding: 5%;
+    margin: 90%;
+    color: blue;
+    margin: 0px;
+  }
+
+  .nav-link {
+    background-color: magenta;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .navbar .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .navbar .container div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navbar .container div ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .ContenedorImagen, .ContenedorImagen--negro, .ContenedorImagen--promo, .ContenedorImagen--azul, .ContenedorImagen--magenta, .ContenedorImagen--cyan {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .ContenedorImagen .ContenedorIngredientes, .ContenedorImagen--negro .ContenedorIngredientes, .ContenedorImagen--promo .ContenedorIngredientes, .ContenedorImagen--azul .ContenedorIngredientes, .ContenedorImagen--magenta .ContenedorIngredientes, .ContenedorImagen--cyan .ContenedorIngredientes {
+    margin: 0px;
+    height: 100%;
+    padding: 30px;
+    width: 100%;
+    justify-self: center;
+  }
+}
+@media (min-width: 978px) {
+  .formulario {
+    padding: 1%;
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .formulario form {
+    background-color: #9f443a;
+    width: 70%;
+    padding: 5%;
+    margin: 90%;
+    color: blue;
+    margin: 0px;
+  }
+  .formulario .nav-link {
+    background-color: green;
+  }
+
+  .ContenedorImagen, .ContenedorImagen--negro, .ContenedorImagen--promo, .ContenedorImagen--azul, .ContenedorImagen--magenta, .ContenedorImagen--cyan {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .ContenedorImagen .ContenedorTexto--negro, .ContenedorImagen--negro .ContenedorTexto--negro, .ContenedorImagen--promo .ContenedorTexto--negro, .ContenedorImagen--azul .ContenedorTexto--negro, .ContenedorImagen--magenta .ContenedorTexto--negro, .ContenedorImagen--cyan .ContenedorTexto--negro {
+    display: flex;
+    width: 50vw;
+    justify-content: space-around;
+  }
+}
+/* final responsive *//*# sourceMappingURL=style.css.map */

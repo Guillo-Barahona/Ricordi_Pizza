@@ -10,6 +10,15 @@ header {
     }
 }
 
+footer {
+    background-color: #303030;
+    border-top: 2px solid white;
+    img:hover {
+        background-color: #60bbc5;
+        border-radius: 12px;
+    }
+}
+
 body {
     background-image: url(https://images.pexels.com/photos/905847/pexels-photo-905847.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-size: 100vw;
@@ -32,6 +41,216 @@ main {
 }
 
 
+
+
+
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover {
+        color: chocolate;
+    }
+
+/* extend */
+/* container bg-light w-25 p-1 d-flex */
+
+.ContenedorImagen {
+    justify-content: space-around;
+    margin: 5px;
+    height: 100%;
+    padding: 10px;
+}
+
+.ContenedorImagen--negro {
+    @extend .ContenedorImagen;
+    background-color: #303030;
+    color: white;
+    display: flex;
+    justify-content: center;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.ContenedorImagen--negro img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+}
+
+/* seccion clases promo */
+.ContenedorImagen--promo {
+    @extend .ContenedorImagen;
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    border: 2px solid;
+    border-radius: 20px;
+}
+
+.ContenedorImagen--promo img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+}
+/* final seccion clases promo */
+
+/* seccion clases ingredientes */
+
+.ContenedorIngredientes {
+    margin: 5px;
+    height: 100%;
+    padding: 0px;
+    background-color: #303030;
+    width: 35%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    div {
+        height: 50%;
+        padding: 0px;
+        img {
+            width: 100%;
+            padding: 0px;
+            margin: 0px;
+            border: white solid 2px;
+        }
+    }
+}
+
+
+
+/* final de seccion clases ingredientes */
+.ContenedorImagen--azul {
+    @extend .ContenedorImagen;
+    background-color: blue;
+    color: white;
+
+}
+.ContenedorImagen--magenta {
+    @extend .ContenedorImagen;
+    background-color: magenta;
+    color: white;
+
+}
+.ContenedorImagen--cyan {
+    @extend .ContenedorImagen;
+    background-color: cyan;
+    color: white;
+
+}
+
+/* mixin */
+
+@mixin ContenedorTexto {
+    font-family: 'Fjalla One', sans-serif;
+    display: flex;
+
+    justify-content: space-around;
+    align-items:center;
+    margin: 5px;
+    height: 100%;
+    
+}
+
+.ContenedorTexto--negro {
+    @include ContenedorTexto;
+    flex-direction: row;
+    background-color: #303030;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid white;
+    border-radius: 20px;
+    }
+
+
+.ContenedorTexto--promo {
+    @include ContenedorTexto;
+    /* background-color: magenta; */
+    flex-direction: row;
+    color: white;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+        h5{
+    border: 2px solid white;
+    border-radius: 20px 40px;
+    padding: 20px 20px 70px 20px;
+    margin-bottom: 0px;
+    color: white;
+    background-color: #9f443a;
+}
+    img {
+        border: white solid 2px;
+        border-radius: 20px 40px;
+        height: 100%;
+        margin: 0px;
+    }
+}
+
+.ContenedorTexto--ingredientes {
+    @include ContenedorTexto;
+    flex-direction: column;
+    color: white;
+    padding: 30px;
+    display: flex;
+        h5 {
+            background-color: #9f443a /* #cc6453 */;
+    border: 2px solid white;
+    border-radius: 20px 40px;
+    padding: 20px 20px 70px 20px;
+    margin-bottom: 0px;
+    color: white;
+    }
+    img {
+        border-radius: 20px 40px;
+        height: 100%;
+        margin: 0px;
+    }
+}
+
+
+.ContenedorTexto--negro:hover {
+    background-color: #454545;
+    opacity: .9;
+    a{
+    color: chocolate;
+    cursor: pointer;
+}
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    margin: 0px;
+    img {
+    opacity: .9;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 70%;
+    height: auto;
+    border: white solid 2px;
+    border-radius: 20px;
+}
+}
+
+.formulario {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.icono {
+    filter: invert(100%);
+}
+
 /* responsive con variables */
 $mobile: 576px;
 $tablet: 768px;
@@ -39,6 +258,9 @@ $desktop: 978px;
 
 /* mobile */
     @media (max-width: $mobile) {
+        footer .icono {
+            height: 100%;
+        }
         .formulario {
             padding: 0px;
             margin: 0px;
@@ -47,7 +269,7 @@ $desktop: 978px;
             justify-content: center;
         }
             form {
-            background-color: red;
+            background-color: #9f443a;
             width: 90%;
             padding: 5%;
             margin: 80%;
@@ -104,13 +326,16 @@ $desktop: 978px;
 
             padding: 2px 20px 2px 2px;
             margin: 0px;
-            width: 80%;
+            width: 60%;
             height: auto;
         }
+        .ContenedorImagen .ContenedorIngredientes {
+            margin: 0px;
+            height: 100%;
+            padding: 0px;
+            width: 100%;
+    }
 }
-
-
-
 /* tablet */
     @media (min-width: $mobile) and (max-width: $desktop) {
         .formulario {
@@ -122,7 +347,7 @@ $desktop: 978px;
             justify-content: center;
         }
         form { 
-            background-color: yellow;
+            background-color: #9f443a;
             width: 80%;
             padding: 5%;
             margin: 90%;
@@ -159,7 +384,20 @@ $desktop: 978px;
             justify-content: center;
             width: 100%;
         }
+        .ContenedorImagen {
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .ContenedorImagen .ContenedorIngredientes {
+            margin: 0px;
+            height: 100%;
+            padding: 30px;
+            width: 100%;
+            justify-self: center;
     }
+}
 
 
     @media (min-width: $desktop ) {
@@ -171,7 +409,7 @@ $desktop: 978px;
             display: flex;
             justify-content: center;
         form { 
-            background-color: cyan;
+            background-color: #9f443a;
             width: 70%;
             padding: 5%;
             margin: 90%;
@@ -199,161 +437,3 @@ $desktop: 978px;
 
 
 /* final responsive */
-
-
-
-    a{
-        text-decoration: none;
-        color: white;
-    }
-
-    a:hover {
-        color: chocolate;
-    }
-
-/* extend */
-/* container bg-light w-25 p-1 d-flex */
-
-.ContenedorImagen {
-    justify-content: space-around;
-    margin: 5px;
-    height: 100%;
-    padding: 10px;
-
-}
-
-.ContenedorImagen--negro {
-    @extend .ContenedorImagen;
-    background-color: #303030;
-    color: white;
-    display: flex;
-    justify-content: center;
-    border: 2px solid white;
-    border-radius: 20px;
-}
-
-.ContenedorImagen--negro img {
-    border-radius: 20px;
-    width: 100%;
-    height: auto;
-}
-/* seccion clases promo */
-.ContenedorImagen--promo {
-    @extend .ContenedorImagen;
-    background-color: blue;
-    color: white;
-    display: flex;
-    justify-content: center;
-    border: 2px solid;
-    border-radius: 20px;
-}
-
-.ContenedorImagen--promo img {
-    border-radius: 20px;
-    width: 100%;
-    height: auto;
-}
-/* final seccion clases promo */
-
-.ContenedorImagen--amarillo {
-    @extend .ContenedorImagen;
-    background-color: yellow;
-    color: white;
-
-}
-.ContenedorImagen--azul {
-    @extend .ContenedorImagen;
-    background-color: blue;
-    color: white;
-
-}
-.ContenedorImagen--magenta {
-    @extend .ContenedorImagen;
-    background-color: magenta;
-    color: white;
-
-}
-.ContenedorImagen--cyan {
-    @extend .ContenedorImagen;
-    background-color: cyan;
-    color: white;
-
-}
-
-/* mixin */
-
-@mixin ContenedorTexto {
-    font-family: 'Fjalla One', sans-serif;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items:center;
-    margin: 5px;
-    height: 100%;
-    
-}
-
-.ContenedorTexto--negro {
-    @include ContenedorTexto;
-    background-color: #303030;
-    color: white;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    border: 2px solid white;
-    border-radius: 20px;
-    }
-
-
-.ContenedorTexto--promo {
-    @include ContenedorTexto;
-    /* background-color: magenta; */
-    color: white;
-    padding: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-        h5{
-    border: 2px solid white;
-    border-radius: 20px 40px;
-    padding: 20px 20px 70px 20px;
-    margin-bottom: 0px;
-    color: #303030;
-}
-    img {
-        border-radius: 20px 40px;
-        height: 100%;
-        margin: 0px;
-    }
-}
-
-
-.ContenedorTexto--verde {
-    @include ContenedorTexto;
-    background-color: lime;
-    color: red;
-    font-size: 20px;
-}
-
-
-.ContenedorTexto--negro:hover {
-    background-color: #424242;
-    color: chocolate;
-    cursor: pointer;
-}
-
-.banner {
-    display: flex;
-    justify-content: center;
-    padding: 10px 0px;
-    margin: 0px;
-    img {
-    opacity: .9;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 100%;
-    height: auto;
-    filter: invert(100%);
-}
-}
