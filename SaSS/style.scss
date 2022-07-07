@@ -177,7 +177,7 @@ main {
     color: white;
     padding: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
         h5{
     border: 2px solid white;
@@ -187,10 +187,12 @@ main {
     color: white;
     background-color: #9f443a;
 }
+
+    
     img {
         border: white solid 2px;
         border-radius: 20px 40px;
-        height: 100%;
+        width: 60%;
         margin: 0px;
     }
 }
@@ -261,6 +263,7 @@ $desktop: 978px;
         footer .icono {
             height: 100%;
         }
+
         .formulario {
             padding: 0px;
             margin: 0px;
@@ -335,6 +338,11 @@ $desktop: 978px;
             padding: 0px;
             width: 100%;
     }
+    .ImgMenu {
+        width: 100%;
+        padding-bottom: 10px;
+
+    }
 }
 /* tablet */
     @media (min-width: $mobile) and (max-width: $desktop) {
@@ -397,6 +405,11 @@ $desktop: 978px;
             width: 100%;
             justify-self: center;
     }
+    .ImgMenu {
+        width: 60%;
+        padding-bottom: 15px;
+
+    }
 }
 
 
@@ -433,6 +446,12 @@ $desktop: 978px;
         width: 50vw;
         justify-content: space-around;
     }
+    .ImgMenu {
+        width: 60%;
+        padding-bottom: 20px;
+
+    }
+
 }
 
 

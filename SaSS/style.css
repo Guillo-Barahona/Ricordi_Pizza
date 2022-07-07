@@ -12,6 +12,7 @@ footer {
   background-color: #303030;
   border-top: 2px solid white;
 }
+
 footer img:hover {
   background-color: #60bbc5;
   border-radius: 12px;
@@ -25,15 +26,17 @@ body {
 
 main {
   background-color: #303030;
-  opacity: 0.9;
+  opacity: .9;
   color: white;
   width: 100vw;
 }
+
 main div {
   opacity: 1;
 }
+
 main h1 {
-  font-family: "Fjalla One", sans-serif;
+  font-family: 'Fjalla One', sans-serif;
 }
 
 a {
@@ -47,8 +50,9 @@ a:hover {
 
 /* extend */
 /* container bg-light w-25 p-1 d-flex */
-.ContenedorImagen, .ContenedorImagen--cyan, .ContenedorImagen--magenta, .ContenedorImagen--azul, .ContenedorImagen--promo, .ContenedorImagen--negro {
-  justify-content: space-around;
+.ContenedorImagen, .ContenedorImagen--negro, .ContenedorImagen--promo, .ContenedorImagen--azul, .ContenedorImagen--magenta, .ContenedorImagen--cyan {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin: 5px;
   height: 100%;
   padding: 10px;
@@ -57,8 +61,12 @@ a:hover {
 .ContenedorImagen--negro {
   background-color: #303030;
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: 2px solid white;
   border-radius: 20px;
 }
@@ -73,8 +81,12 @@ a:hover {
 .ContenedorImagen--promo {
   background-color: blue;
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: 2px solid;
   border-radius: 20px;
 }
@@ -94,14 +106,23 @@ a:hover {
   background-color: #303030;
   width: 35%;
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .ContenedorIngredientes div {
   height: 50%;
   padding: 0px;
 }
+
 .ContenedorIngredientes div img {
   width: 100%;
   padding: 0px;
@@ -127,37 +148,56 @@ a:hover {
 
 /* mixin */
 .ContenedorTexto--negro {
-  font-family: "Fjalla One", sans-serif;
+  font-family: 'Fjalla One', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 5px;
   height: 100%;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   background-color: #303030;
   color: white;
   padding: 20px;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border: 2px solid white;
   border-radius: 20px;
 }
 
 .ContenedorTexto--promo {
-  font-family: "Fjalla One", sans-serif;
+  font-family: 'Fjalla One', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 5px;
   height: 100%;
   /* background-color: magenta; */
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   color: white;
   padding: 30px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
+
 .ContenedorTexto--promo h5 {
   border: 2px solid white;
   border-radius: 20px 40px;
@@ -166,25 +206,35 @@ a:hover {
   color: white;
   background-color: #9f443a;
 }
+
 .ContenedorTexto--promo img {
   border: white solid 2px;
   border-radius: 20px 40px;
-  height: 100%;
+  width: 60%;
   margin: 0px;
 }
 
 .ContenedorTexto--ingredientes {
-  font-family: "Fjalla One", sans-serif;
+  font-family: 'Fjalla One', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 5px;
   height: 100%;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   color: white;
   padding: 30px;
   display: flex;
 }
+
 .ContenedorTexto--ingredientes h5 {
   background-color: #9f443a;
   border: 2px solid white;
@@ -193,6 +243,7 @@ a:hover {
   margin-bottom: 0px;
   color: white;
 }
+
 .ContenedorTexto--ingredientes img {
   border-radius: 20px 40px;
   height: 100%;
@@ -201,24 +252,37 @@ a:hover {
 
 .ContenedorTexto--negro:hover {
   background-color: #454545;
-  opacity: 0.9;
+  opacity: .9;
 }
+
 .ContenedorTexto--negro:hover a {
   color: chocolate;
   cursor: pointer;
 }
 
 .banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 10px 0px;
   margin: 0px;
 }
+
 .banner img {
-  opacity: 0.9;
+  opacity: .9;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   width: 70%;
   height: auto;
   border: white solid 2px;
@@ -226,11 +290,12 @@ a:hover {
 }
 
 .formulario {
-  font-family: "Fjalla One", sans-serif;
+  font-family: 'Fjalla One', sans-serif;
 }
 
 .icono {
-  filter: invert(100%);
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
 }
 
 /* responsive con variables */
@@ -239,15 +304,17 @@ a:hover {
   footer .icono {
     height: 100%;
   }
-
   .formulario {
     padding: 0px;
     margin: 0px;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-
   form {
     background-color: #9f443a;
     width: 90%;
@@ -256,77 +323,103 @@ a:hover {
     color: blue;
     margin: 0px;
   }
-
   .nav-link {
     background-color: limegreen;
   }
-
   .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-
   .navbar .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-
   .navbar .container div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
   }
-
   .navbar .container div ul {
     background-color: salmon;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
   }
-
   .ContenedorImagen, .ContenedorImagen--negro, .ContenedorImagen--promo, .ContenedorImagen--azul, .ContenedorImagen--magenta, .ContenedorImagen--cyan {
     padding: 5px;
   }
-
   .ContenedorImagen .ContenedorTexto--negro, .ContenedorImagen--negro .ContenedorTexto--negro, .ContenedorImagen--promo .ContenedorTexto--negro, .ContenedorImagen--azul .ContenedorTexto--negro, .ContenedorImagen--magenta .ContenedorTexto--negro, .ContenedorImagen--cyan .ContenedorTexto--negro {
     margin: 0px;
     width: 100%;
   }
-
   .ContenedorImagen .ContenedorTexto--negro div, .ContenedorImagen--negro .ContenedorTexto--negro div, .ContenedorImagen--promo .ContenedorTexto--negro div, .ContenedorImagen--azul .ContenedorTexto--negro div, .ContenedorImagen--magenta .ContenedorTexto--negro div, .ContenedorImagen--cyan .ContenedorTexto--negro div {
     margin: 0px;
     width: auto;
     height: auto;
   }
-
   .ContenedorImagen .ContenedorTexto--negro div img, .ContenedorImagen--negro .ContenedorTexto--negro div img, .ContenedorImagen--promo .ContenedorTexto--negro div img, .ContenedorImagen--azul .ContenedorTexto--negro div img, .ContenedorImagen--magenta .ContenedorTexto--negro div img, .ContenedorImagen--cyan .ContenedorTexto--negro div img {
     padding: 2px 20px 2px 2px;
     margin: 0px;
     width: 60%;
     height: auto;
   }
-
   .ContenedorImagen .ContenedorIngredientes, .ContenedorImagen--negro .ContenedorIngredientes, .ContenedorImagen--promo .ContenedorIngredientes, .ContenedorImagen--azul .ContenedorIngredientes, .ContenedorImagen--magenta .ContenedorIngredientes, .ContenedorImagen--cyan .ContenedorIngredientes {
     margin: 0px;
     height: 100%;
     padding: 0px;
     width: 100%;
   }
+  .ImgMenu {
+    width: 100%;
+    padding-bottom: 10px;
+  }
 }
+
 /* tablet */
 @media (min-width: 576px) and (max-width: 978px) {
   .formulario {
     padding: 1%;
     margin: 0px;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-
   form {
     background-color: #9f443a;
     width: 80%;
@@ -335,59 +428,97 @@ a:hover {
     color: blue;
     margin: 0px;
   }
-
   .nav-link {
     background-color: magenta;
   }
-
   .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-
   .navbar .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-
   .navbar .container div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
   }
-
   .navbar .container div ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
   }
-
   .ContenedorImagen, .ContenedorImagen--negro, .ContenedorImagen--promo, .ContenedorImagen--azul, .ContenedorImagen--magenta, .ContenedorImagen--cyan {
     padding: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-
   .ContenedorImagen .ContenedorIngredientes, .ContenedorImagen--negro .ContenedorIngredientes, .ContenedorImagen--promo .ContenedorIngredientes, .ContenedorImagen--azul .ContenedorIngredientes, .ContenedorImagen--magenta .ContenedorIngredientes, .ContenedorImagen--cyan .ContenedorIngredientes {
     margin: 0px;
     height: 100%;
     padding: 30px;
     width: 100%;
-    justify-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .ImgMenu {
+    width: 60%;
+    padding-bottom: 15px;
   }
 }
+
 @media (min-width: 978px) {
   .formulario {
     padding: 1%;
     margin: 0px;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .formulario form {
     background-color: #9f443a;
@@ -400,17 +531,31 @@ a:hover {
   .formulario .nav-link {
     background-color: green;
   }
-
   .ContenedorImagen, .ContenedorImagen--negro, .ContenedorImagen--promo, .ContenedorImagen--azul, .ContenedorImagen--magenta, .ContenedorImagen--cyan {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-
   .ContenedorImagen .ContenedorTexto--negro, .ContenedorImagen--negro .ContenedorTexto--negro, .ContenedorImagen--promo .ContenedorTexto--negro, .ContenedorImagen--azul .ContenedorTexto--negro, .ContenedorImagen--magenta .ContenedorTexto--negro, .ContenedorImagen--cyan .ContenedorTexto--negro {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 50vw;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .ImgMenu {
+    width: 60%;
+    padding-bottom: 20px;
   }
 }
-/* final responsive *//*# sourceMappingURL=style.css.map */
+
+/* final responsive */
+/*# sourceMappingURL=style.css.map */
