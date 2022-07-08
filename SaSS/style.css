@@ -192,16 +192,17 @@ a:hover {
       -ms-flex-direction: row;
           flex-direction: row;
   color: white;
-  padding: 30px;
+  padding: 10px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 50%;
 }
 
-.ContenedorTexto--promo h5 {
+.ContenedorTexto--promo .TextoPromo {
   border: 2px solid white;
   border-radius: 20px 40px;
-  padding: 20px 20px 70px 20px;
+  padding: 20px;
   margin-bottom: 0px;
   color: white;
   background-color: #9f443a;
@@ -401,6 +402,9 @@ a:hover {
     padding: 0px;
     width: 100%;
   }
+  .ContenedorTexto--promo {
+    width: 100%;
+  }
   .ImgMenu {
     width: 100%;
     padding-bottom: 10px;
@@ -502,12 +506,16 @@ a:hover {
     -ms-grid-column-align: center;
         justify-self: center;
   }
+  .ContenedorTexto--promo {
+    width: 100%;
+  }
   .ImgMenu {
     width: 60%;
     padding-bottom: 15px;
   }
 }
 
+/* Desktop */
 @media (min-width: 978px) {
   .formulario {
     padding: 1%;
