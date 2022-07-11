@@ -24,37 +24,27 @@
     <body>
       <header>
           <!-- LINKS DE NAVEGACION -->
-          <nav class="navbar navbar-expand-lg border-bottom border-1 d-flex">
-            <div class="container d-flex ">
-                <a class="navbar-brand border border-light m-2 p-1" href="#" >
-                  <img src="../IMG/RICORDI LOGO.png" width="80" height="80" class="d-inline-block align-top" alt="Ricordi Logo" >
-                  </a>
+          <nav class="nav">
+            <div class="nav__container">
+                <a class="navbar-brand border border-light m-2 p-1" href="../index.html" >
+                <img src="../IMG/RICORDI LOGO.png" width="80" height="80" class="nav__logo" alt="Ricordi Logo" >
+                </a>
+
+              <label for="menu" class="nav__label">
+                <img src="../assets/menu.svg" class="nav__img">
+              </label>
+              <input type="checkbox" id="menu" class="nav__input">
+
+              <div class="nav__menu">
+                <a href="../index.html" class="nav__item">Inicio</a>
+                <a href="./nosotros.html" class="nav__item">Nosotros</a>
+                <a href="../PAGES/promociones.html" class="nav__item">Promociones</a>
+                <a href="#" class="nav__item">Ingredientes</a>
+                <a href="../PAGES/contacto.html" class="nav__item">Contacto </a>
               </div>
-  
-              <div class="container d-flex justify-content-end">
-  
-                <div class="navbar navbar-expand-lg d-flex justify-content-end" id="navbarSupportedContent">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link active border border-dark px-3 bg-light mx-1" aria-current="page" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link border border-dark px-3 bg-light mx-1" href="./nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link border border-dark px-3 bg-light mx-1" href="./promociones.html">Promociones</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link border border-dark px-3 bg-light mx-1" href="./ingredientes.html">Ingredientes</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link border border-dark px-3 bg-light mx-1" href="./contacto.html">Contacto</a>
-                    </li>
-                  </ul>
-  
-                </div>
-              </div>
-            </nav>
+            </div>
+          </nav>
+      </header>
       </header>
       <hr>
 
@@ -75,7 +65,7 @@
         <img src="../IMG/Piccolo.png" class="d-block w-75" alt="Ingrediente1">
     </div><br><br>
     <div class="ContenedorTexto--ingredientes">
-      <h5 class="d-block w-100 mb-4"><strong>Pizza Especialidad - Piccolo</strong><br><br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo mollitia ut voluptatem sequi iste doloribus?</h5>
+      <h5 class="d-block w-100 mb-4"><strong>Pizza Especialidad - Piccolo</strong><br><br><br>Pizza con auténticos sabores Mexicanos: Champiñones, Chorizo, Jamón, Chiles raja</h5>
     </div>
   </div>
 
@@ -84,7 +74,7 @@
         <img src="../IMG/Amore.png" class="d-block w-75" alt="Ingrediente2">
     </div><br><br>
     <div class="ContenedorTexto--ingredientes">
-      <h5 class="d-block w-100 mb-4"><strong>Pizza Especialidad - Amore</strong><br><br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo mollitia ut voluptatem sequi iste doloribus?</h5>
+      <h5 class="d-block w-100 mb-4"><strong>Pizza Especialidad - Amore</strong><br><br><br>Pizza horneada con sabores clásicos y caseros: Jamón y Champiñones</h5>
     </div>
   </div>
 
@@ -94,7 +84,7 @@
         <img src="../IMG/senzasione.png" class="d-block w-75" alt="Ingrediente3">
     </div><br><br>
     <div class="ContenedorTexto--ingredientes">
-      <h5 class="d-block w-100 mb-4"><strong>Pizza Especialidad - Senzasione</strong><br><br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo mollitia ut voluptatem sequi iste doloribus?</h5>
+      <h5 class="d-block w-100 mb-4"><strong>Pizza Especialidad - Senzasione</strong><br><br><br>Pizza horneada para los amantes de la carne: Salchicha, Jamón y tocino</h5>
     </div>
   </div>
 
@@ -107,7 +97,8 @@
 
 
 
-          <div class="container w-100 p-2 text-light d-flex justify-content-center">
+          <div class="container w-100 p-2 text-light d-flex flex-column justify-content-center align-items-center">
+            <h3>Dsecarga nuestro Menú:</h3><br>
             <img  class="ImgMenu" src="../IMG/Menu.jpg">
           </div>
 
@@ -117,7 +108,7 @@
 
 
 <!-- footer con links de redes -->
-<footer class="text-center text-white p-1 bg-dark d-flex flex-row">
+<footer class="text-center text-white p-1 bg-dark d-flex flex-row float-bottom">
 
   <div class="text-start text-light p-1 m-3 d-flex align-items-center" style="width: 100%" >
     <div class="py-0 my-0">
@@ -125,44 +116,40 @@
       <h6><a class="text-light" href="#">Guillermo Barahona</a></h6></div>
   </div>
   
-    <div class="container p-1 m-3 d-flex align-items-center" style= "width: 40%;">
+    <div class="container__redes">
         <!-- Section: Social media -->
-        <section class=" d-flex justify-content-end align-items-center">
+        <section>
           <!-- Facebook -->
           <a
-            class="icono"
+            class="redes"
             href="https://www.facebook.com/"
             role="button"
             data-mdb-ripple-color="dark"
-            ><i class="fab fa-facebook-f"><img src="../IMG/facebook.png" style= "width: 40%;"></i
-          ></a>
+            ><img src="../IMG/facebook.png"></a>
     
           <!-- Twitter -->
           <a
-            class="icono"
+            class="redes"
             href="https://twitter.com"
             role="button"
             data-mdb-ripple-color="dark"
-            ><i class="fab fa-twitter"><img src="../IMG/twitter.png" style= "width: 40%;"> </i
-          ></a>
+            ><img src="../IMG/twitter.png"></a>
     
           <!-- Instagram -->
           <a
-            class="icono"
+            class="redes"
             href="https://www.instagram.com/"
             role="button"
             data-mdb-ripple-color="dark"
-            ><i class="fab fa-instagram"><img src="../IMG/instagram.png" style= "width: 40%;"></i
-          ></a>
+            ><img src="../IMG/instagram.png"></a>
 
           <!-- Whatsapp -->
           <a
-          class="icono"
+          class="redes"
           href="https://web.whatsapp.com/"
           role="button"
           data-mdb-ripple-color="dark"
-          ><i class="fab fa-whatsapp"><img src="../IMG/whatsapp.png" style= "width: 40%;"></i
-          ></a>
+          ><img src="../IMG/whatsapp.png"></a>
         </section>
         <!-- Section: Social media -->
       </div>

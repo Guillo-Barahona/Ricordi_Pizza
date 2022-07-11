@@ -3,27 +3,100 @@
     padding: 0px;
 }
 
+body {
+    background-image: url(https://images.pexels.com/photos/905847/pexels-photo-905847.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: 100vw;
+    background-color: #f6edce;
+    font-family: "Fjalla One", sans-serif;
+
+    display:flex; 
+    flex-direction:column; 
+    min-height:100vh;
+}
+
+    .wrapper {
+        flex: 1;
+    }
+
 header {
     nav{
-        background-color: #303030;
         border-bottom: 2px solid white;
     }
+    .nav {
+        background-color: #303030;
+        height: 120px;
+        color: white;
+    }
+    
+    .nav__container {
+        display: flex;
+        height: 100%;
+        width: 90%;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+
+    
+    .nav__menu {
+        display: grid;
+        gap: 3em;
+        a {
+            font-size: 20px;
+        }
+    }
+    .nav__item {
+        color: #fff;
+        text-decoration: none;
+        --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+
+
+    }
+    .nav__item::after {
+        content: "";
+        display: block;
+        background-color: #fff;
+        width: 90%;
+        margin-top: 3px;
+        height: 3px;
+        clip-path: var(--clippy);
+        transition: clip-path .3s;
+    }
+    .nav__item:hover {
+        --clippy : polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
 }
+
 
 footer {
     background-color: #303030;
     border-top: 2px solid white;
+    bottom: 0px;
+    height: 80px;
+    margin: 0px;
+    .container__redes {
+        display: flex;
+        width: 60%;
+        justify-content: center;
+        margin-right: 5%;
+        align-items: center;
+    }
+    section {
+        display: flex;
+        justify-content: center;
+    }
+    .redes img{
+        width: 30%;
+
+    }
     img:hover {
         background-color: #60bbc5;
         border-radius: 12px;
     }
 }
 
-body {
-    background-image: url(https://images.pexels.com/photos/905847/pexels-photo-905847.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-    background-size: 100vw;
-    background-color: #f6edce;
-}
+
 
 main {
     background-color: #303030;
@@ -39,12 +112,6 @@ main {
         font-family: 'Fjalla One', sans-serif;
     }
 }
-
-
-
-
-
-
     a{
         text-decoration: none;
         color: white;
@@ -169,6 +236,20 @@ main {
     border-radius: 20px;
     }
 
+    .ContenedorTexto--nosotros {
+        @include ContenedorTexto;
+
+        background-color: #9f443a;
+        color: white;
+        padding: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 20px;
+        border: 2px solid white;
+        border-radius: 20px;
+        }
+
 
 .ContenedorTexto--promo {
     @include ContenedorTexto;
@@ -202,6 +283,14 @@ main {
     color: white;
     padding: 30px;
     display: flex;
+        .TextoIngredientes{
+        border: 2px solid white;
+        border-radius: 20px 40px;
+        padding: 20px;
+        margin-bottom: 0px;
+        color: white;
+        background-color: #9f443a;
+        }
         h5 {
             background-color: #9f443a /* #cc6453 */;
     border: 2px solid white;
@@ -210,6 +299,7 @@ main {
     margin-bottom: 0px;
     color: white;
     }
+
     img {
         border-radius: 20px 40px;
         height: 100%;
@@ -248,7 +338,7 @@ main {
     font-family: 'Fjalla One', sans-serif;
 }
 
-.icono {
+.redes, .icono {
     filter: invert(100%);
 }
 
@@ -259,8 +349,49 @@ $desktop: 978px;
 
 /* mobile */
     @media (max-width: $mobile) {
-        footer .icono {
-            height: 100%;
+
+        .nav__label {
+            display: block;
+            cursor: pointer;
+        }
+        .nav__input {
+            display: none;
+        }
+
+        .nav__menu {
+            background-color: #303030;
+            position: fixed;
+            top: 120px;
+            bottom: 0;
+            width: 100%;
+            
+            left: 0;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            clip-path: circle(0% at center);
+            transition: clip-path .5s ease-in-out;
+            z-index: 999;
+        }
+        .nav__input:checked + .nav__menu{
+            background-color: #303030;
+            clip-path: circle(100% at center);
+        }
+
+
+
+        footer {
+            .container__redes {
+                width: 60%;
+                margin-right: 5%;
+            }
+            .redes img{
+                width: 70%;
+            }
+            h6 {
+                font-size: 10px;
+            }
         }
 
         .formulario {
@@ -343,11 +474,44 @@ $desktop: 978px;
     .ImgMenu {
         width: 100%;
         padding-bottom: 10px;
-
     }
+    .icono {
+        width: 250%;
+    }
+
 }
 /* tablet */
     @media (min-width: $mobile) and (max-width: $desktop) {
+
+        .nav__label {
+            display: block;
+            cursor: pointer;
+        }
+        .nav__input {
+            display: none;
+        }
+
+        .nav__menu {
+            background-color: #303030;
+            position: fixed;
+            top: 120px;
+            bottom: 0;
+            width: 100%;
+            
+            left: 0;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            clip-path: circle(0% at center);
+            transition: clip-path .5s ease-in-out;
+            z-index: 999;
+        }
+        .nav__input:checked + .nav__menu{
+            background-color: #303030;
+            clip-path: circle(100% at center);
+        }
+
         .formulario {
             padding: 1%;
             margin: 0px;
@@ -412,11 +576,26 @@ $desktop: 978px;
         .ContenedorTexto--promo {
             width: 100%;
         }
-
+        .ContenedorTexto--nosotros {
+            padding: 20px;
+            font-size: 18px;
+        }
     .ImgMenu {
         width: 60%;
         padding-bottom: 15px;
 
+    }
+    footer {
+        .container__redes {
+            width: 60%;
+            margin-right: 5%;
+        }
+        .redes img{
+            width: 40%;
+        }
+        h6 {
+            font-size: 12px;
+        }
     }
 }
 
@@ -459,7 +638,15 @@ $desktop: 978px;
         padding-bottom: 20px;
 
     }
-
+    
+    .nav__label, .nav__input {
+        display: none;
+    } 
+    .nav__menu {
+        display: grid;
+        grid-auto-flow: column;
+        gap: 3em;
+    }
 }
 
 
